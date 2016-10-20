@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/digitnexus/!svn/ver/11972/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/acl/service
+END
+AclService.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/digitnexus/!svn/ver/11940/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/acl/service/AclService.java
+END
+AclServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/digitnexus/!svn/ver/11972/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/acl/service/AclServiceImpl.java
+END
+AclExpressionParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/digitnexus/!svn/ver/8246/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/acl/service/AclExpressionParser.java
+END
+AclExpressionParserImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/digitnexus/!svn/ver/11940/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/acl/service/AclExpressionParserImpl.java
+END

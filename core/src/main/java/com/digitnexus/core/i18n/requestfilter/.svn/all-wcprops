@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/digitnexus/!svn/ver/12017/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/i18n/requestfilter
+END
+LocaleContextInitializingFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/i18n/requestfilter/LocaleContextInitializingFilter.java
+END
+LoginLocaleContextInitializingFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/digitnexus/!svn/ver/12017/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/i18n/requestfilter/LoginLocaleContextInitializingFilter.java
+END

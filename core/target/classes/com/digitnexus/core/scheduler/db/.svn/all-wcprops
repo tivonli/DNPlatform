@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/scheduler/db
+END
+DBCleanUpJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/scheduler/db/DBCleanUpJob.java
+END
+DBCleanUpScheduler.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/scheduler/db/DBCleanUpScheduler.java
+END

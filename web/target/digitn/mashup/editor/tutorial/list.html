@@ -1,0 +1,26 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="../js/tutorial.js"></script>
+      
+        <script  type="text/javascript">
+            var initList = function() {
+                 var l = document.getElementById('pageList')
+                 digitnexus.editor.Tutorial.prototype.getInstance().loadPageList(l);
+                 l.childNodes[1].firstChild.click();
+            }
+        </script>
+    </head>
+    <body onload="initList();">
+        <div>
+            <ul id="pageList"> 
+            </ul>
+        </div>
+    </body>
+</html>

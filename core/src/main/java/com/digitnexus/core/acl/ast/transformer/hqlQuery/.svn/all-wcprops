@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/digitnexus/!svn/ver/10514/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/acl/ast/transformer/hqlQuery
+END
+ASTNodeTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/digitnexus/!svn/ver/8246/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/acl/ast/transformer/hqlQuery/ASTNodeTransformer.java
+END
+ASTNodeTransformers.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/digitnexus/!svn/ver/10514/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/acl/ast/transformer/hqlQuery/ASTNodeTransformers.java
+END
+AclTransformationUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/digitnexus/!svn/ver/8246/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/acl/ast/transformer/hqlQuery/AclTransformationUtil.java
+END
+HQLQueryAclTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/digitnexus/!svn/ver/8246/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/acl/ast/transformer/hqlQuery/HQLQueryAclTransformer.java
+END

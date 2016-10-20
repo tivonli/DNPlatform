@@ -1,0 +1,32 @@
+<html>
+ <head><title>CSV Upload</title></head></p> <p><body>
+ <form action="CSVDataLoader" method="post" enctype="multipart/form-data">
+   <center>
+	   <table border="2">
+	       <tr>
+	          <td align="right"><b>Entity:</td>
+	          <td>
+				<select name="dataObjectName">
+				  <option value="User">User</option>
+				  <option value="Asset">Asset</option>
+				  <option value="AssetLocation">AssetLocations</option>
+				</select>
+	          </td>
+	       </tr>
+	       <tr>
+	          <td align="right"><b>CSV File </td>
+	          <td>
+	             <input name="file" type="file" id="file">
+	          <td>
+	       </tr>
+	       <tr>
+	          <td align="center" colspan="2">
+	            <input type="submit" name="Submit" value="Submit"/>
+	            <input type="reset" name="Reset" value="Reset"/>
+	           </td>
+	        </tr>
+	    </table>
+    </center>
+ </form>
+ </body>
+ </html>

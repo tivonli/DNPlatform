@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/digitnexus/!svn/ver/11578/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util
+END
+mxClipboard.js
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxClipboard.js
+END
+mxUndoManager.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxUndoManager.js
+END
+mxUtils.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxUtils.js
+END
+mxToolbar.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxToolbar.js
+END
+mxEventSource.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxEventSource.js
+END
+mxForm.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxForm.js
+END
+mxDictionary.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxDictionary.js
+END
+mxEventObject.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxEventObject.js
+END
+mxResources.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/digitnexus/!svn/ver/10393/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxResources.js
+END
+mxConstants.js
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxConstants.js
+END
+mxSvgCanvas2D.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxSvgCanvas2D.js
+END
+mxLog.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxLog.js
+END
+mxEvent.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxEvent.js
+END
+mxImage.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxImage.js
+END
+mxXmlCanvas2D.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxXmlCanvas2D.js
+END
+mxSession.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxSession.js
+END
+mxMorphing.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxMorphing.js
+END
+mxPanningManager.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxPanningManager.js
+END
+mxUrlConverter.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxUrlConverter.js
+END
+mxPath.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxPath.js
+END
+mxGuide.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxGuide.js
+END
+mxUndoableEdit.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxUndoableEdit.js
+END
+mxRectangle.js
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxRectangle.js
+END
+mxWindow.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/digitnexus/!svn/ver/11578/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxWindow.js
+END
+mxXmlRequest.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxXmlRequest.js
+END
+mxImageBundle.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxImageBundle.js
+END
+mxAnimation.js
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxAnimation.js
+END
+mxEffects.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxEffects.js
+END
+mxObjectIdentity.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxObjectIdentity.js
+END
+mxAutoSaveManager.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxAutoSaveManager.js
+END
+mxImageExport.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxImageExport.js
+END
+mxDivResizer.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxDivResizer.js
+END
+mxPopupMenu.js
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxPopupMenu.js
+END
+mxPoint.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxPoint.js
+END
+mxMouseEvent.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxMouseEvent.js
+END
+mxDragSource.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/util/mxDragSource.js
+END

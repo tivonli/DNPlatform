@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/digitnexus/!svn/ver/8246/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/search/transformer/hqlQuery
+END
+ToQueryRootTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/digitnexus/!svn/ver/8132/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/search/transformer/hqlQuery/ToQueryRootTransformer.java
+END
+ConditionFilterExpressionInterpretors.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/digitnexus/!svn/ver/8246/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/search/transformer/hqlQuery/ConditionFilterExpressionInterpretors.java
+END

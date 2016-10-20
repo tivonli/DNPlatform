@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/layout
+END
+mxCircleLayout.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/layout/mxCircleLayout.js
+END
+mxGraphLayout.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/layout/mxGraphLayout.js
+END
+mxParallelEdgeLayout.js
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/layout/mxParallelEdgeLayout.js
+END
+mxCompositeLayout.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/layout/mxCompositeLayout.js
+END
+mxEdgeLabelLayout.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/layout/mxEdgeLabelLayout.js
+END
+mxStackLayout.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/layout/mxStackLayout.js
+END
+mxCompactTreeLayout.js
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/layout/mxCompactTreeLayout.js
+END
+mxPartitionLayout.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/layout/mxPartitionLayout.js
+END
+mxFastOrganicLayout.js
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/lib/js/layout/mxFastOrganicLayout.js
+END

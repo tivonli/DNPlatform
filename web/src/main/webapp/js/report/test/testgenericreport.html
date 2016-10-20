@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>test new reporting engine</title>
+       
+
+        <link rel="stylesheet" type="text/css" href="../report/styles/common.css">
+    <link rel="stylesheet" type="text/css"  href="../report/closure/goog/css/menu.css">
+    <link rel="stylesheet" type="text/css"  href="../report/closure/goog/css/menuitem.css">
+    <link rel="stylesheet" type="text/css"  href="../report/closure/goog/css/menuseparator.css">
+    <link rel="stylesheet" type="text/css"  href="../report/closure/goog/css/filteredmenu.css">
+    <link rel="stylesheet" type="text/css"  href="../report/closure/goog/css/filterobservingmenuitem.css">
+    <link rel="stylesheet" type="text/css"  href="../report/closure/goog/css/tristatemenuitem.css">
+
+	<script type="text/javascript" src="../jquery-1.7.1.js"></script>
+         <script type="text/javascript" src="../report/closure/goog/base.js"></script>
+        <!--   <script type="text/javascript" src="../../js/jquery-1.7.1.js"></script> -->
+        <script type="text/javascript" src="../report/mashuputils.js"></script>
+         <script type="text/javascript" src="../report/bodata.js"></script>
+        <script type="text/javascript" src="../report/reportingengine.js"></script> 
+        <script type="text/javascript" src="../report/drawoperator.js"></script>
+        <script type="text/javascript" src="../report/filteroperator.js"></script>
+        
+         <script type="text/javascript" src="../report/rgraph/RGraph.common.core.js"></script>
+        <script type="text/javascript" src="../report/rgraph/RGraph.common.tooltips.js"></script>
+        <script type="text/javascript" src="../report/rgraph/RGraph.common.effects.js"></script>
+	<script type="text/javascript" src="../report/rgraph/RGraph.common.dynamic.js"></script>
+	<script type="text/javascript" src="../report/rgraph/RGraph.common.key.js"></script>
+        <script type="text/javascript" src="../report/rgraph/RGraph.bar.js"></script>
+        <script type="text/javascript" src="../report/rgraph/RGraph.line.js" ></script>
+        <script type="text/javascript" src="../report/rgraph/RGraph.pie.js" ></script>
+        <script type="text/javascript" src="../report/rgraph/RGraph.meter.js" ></script>
+        <script type="text/javascript" src="../report/rgraph/RGraph.common.tooltips.js" ></script>
+        <script type="text/javascript"  src="../report/rgraph/RGraph.funnel.js" ></script>
+        <script type="text/javascript"  src="../report/rgraph/RGraph.common.context.js" ></script>
+        <script type="text/javascript"  src="../report/rgraph/RGraph.hbar.js" ></script>
+        <script  type="text/javascript"  src="../report/rgraph/RGraph.hprogress.js"></script>
+        <script   type="text/javascript"  src="../report/rgraph/RGraph.radar.js" ></script>
+        <script   type="text/javascript"  src="../report/rgraph/RGraph.rose.js" ></script>
+         <script   type="text/javascript"  src="../report/rgraph/RGraph.rscatter.js" ></script>
+        
+	<script type="text/javascript">
+	var context = digitnexus.re.context = "/SCMVisibility";
+	function executeMashup() {
+		//request and run the test mash-up
+		var url = "/SCMVisibility/rest/mashup_a/data/" + $("#mashupUrl").attr("value");
+                digitnexus.re.mashupManager.requestAndExecuteMashup(url,['executeResultContainer']);
+	}
+        
+        function removeChild(id) {
+             var container = document.getElementById(id);
+                                                         if(container) {
+                                                             for(var c = container.firstChild; c != null; c = container.firstChild ) {
+                                                                 container.removeChild(c);
+                                                             }
+                                                         }
+        }
+        
+	function  setReportList(json) {
+		var jsonObj = eval('(' + json+')');
+		if(null == jsonObj) {
+			console.log("no report list found");
+			return;
+		}
+		var rl = jsonObj.body.data;
+		if(null == rl) {
+			console.log("no report list found");
+			return;
+		}
+		
+		var reportNode = $("#reportList").empty();
+		
+		for(index = 0; index < rl.length; index += 1 ) {
+			var rp = rl[index];
+			var url = context +  digitnexus.re.Constants.MASHUP_URL + rp.id
+			var aTag ="<a href="+url+">"
+			var aLink = $(aTag).append(rp.name).val(url).bind('click',function(source) {	
+				var url = $(this).attr('href');
+                                 // /SCMVisibility/rest/mashup_a/data/162429
+				 digitnexus.re.mashupManager.requestAndExecuteMashup(url,['executeResultContainer']);
+				 return false;
+            });
+			
+			reportNode.append(aLink).append($("<br>"));
+		}
+		
+		if(rl.length > 0) {
+			var rp = rl[0];
+			var url = context +  digitnexus.re.Constants.MASHUP_URL + rp.id
+			 digitnexus.re.mashupManager.requestAndExecuteMashup(url,['executeResultContainer']);
+		}
+	}
+	
+	function getReportGroup() {
+		digitnexus.re.reportManager.getReportGroup('browser', function(jsonGroups) {
+			if(null == jsonGroups) {
+				console.log("no report list found");
+				return;
+			}
+			var groups = eval('(' + jsonGroups+')');
+			if(null == groups) {
+				console.log("no report list found");
+				return;
+			}
+			var groupNode = $("#reportGroup").empty();
+			for(index = 0; index < groups.length; index++) {
+				var gid = groups[index];
+				var aLink = $("<a>").append(gid).attr("href","#").bind('click',function() {
+					 var groupId = $(this).attr('groupId');
+					 digitnexus.re.reportManager.getReportList(
+	                         groupId, 
+	                         function(json) {
+	                               setReportList(json);
+	                          }
+					 );
+					 return false;
+	            });
+				aLink.attr('groupId',gid);
+				groupNode.append(aLink).append($("<br>"));
+			}
+			
+			if(groups[0] != null) {
+				digitnexus.re.reportManager.getReportList(
+	                    groups[0], 
+	                    function(json) {
+	                          setReportList(json);
+	                     }
+				 );
+			}
+		});
+		
+	}
+	
+	$(document).ready(getReportGroup);
+	
+ </script>
+</head>
+
+<body>
+
+     <center><h1>报表测试</h1></center><br/><br/>
+	
+ <center>
+ <table border="1" style="height:500px;width:800px">
+ 
+    <tr style="height:100%">
+    <td id="reportGroup" style="height:100%;width:15%; vertical-align:top">
+    </td>
+    <td id="reportList" style="height:100%;width:15%; vertical-align:top">
+    </td>
+    <td style="height:100%;width:70%; vertical-align:top;">
+        
+        <div id="executeResultContainer" style="width: 100%; height: 100%"></div>
+    </td>
+    </tr>
+ </table>
+ </center>
+
+</body>
+</html>

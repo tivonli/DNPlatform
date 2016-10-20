@@ -1,0 +1,146 @@
+a.error {
+	background-color:red;
+}
+
+pre{
+	white-space:pre-wrap;
+	word-wrap: break-word;
+}
+.colorfield{
+	border:1px solid #000;
+	width:20px;
+	height:16px;
+}
+/* button----------------------------------*/
+.iconbtn_1{
+	width:22px;
+	height:17px;
+	background-repeat:no-repeat;
+	background-position: left top;
+	cursor:pointer;
+}
+div.iconbtn_1:hover{
+	background-position:0 -17px;
+}
+.btn_remove_1{
+	background-image:url(../images/common/button/iconbtn_remove_l_1.png);
+}
+.btn_del_1{
+	background-image:url(../images/common/button/iconbtn_del_1.png);
+}
+.btn_general_1{
+	border:1px solid #CDD0D4; 
+	background:url(../images/common/button/btn_general_c.png) left top repeat-x;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	display:inline-block;
+	cursor:pointer;
+	padding:0px 8px;
+	color:#666!important; 
+	font-weight:normal;
+	text-decoration:none!important;
+}
+
+div.btn_general_1:hover,
+a.btn_general_1:hover{
+	border:1px solid #999;
+	color:#333!important; 
+}
+.btn_general_1 .btn_icon6{
+	margin:2px 5px 0 0;
+	float:left;
+}
+.btn_general_1 .text{
+	margin:1px 0 0 0;
+	float:left;
+}
+/* icon----------------------------------*/
+.icon_selected_1{background-image:url(../images/common/icon/icon_selected_1.png);}
+.icon_arrow_1{background-image:url(../images/common/icon/icon_arrow1.gif);}
+
+/*******************SearchBar*************************************/
+.icon_search{
+	width:20px;
+	height:24px;
+	background:url(../images/common/icon/tb_search.png) left 4px no-repeat;
+	float:left;
+}
+.search_btn{
+	float:right;
+	width:170px;
+}
+.search_content{
+	margin:4px 180px 0 30px;
+}
+.search_content_l{
+	float:left;
+	margin:4px 15px 0 10px;
+}
+.search_content_r{
+	float:left;
+	margin:4px 0 0 0;
+}
+.search_content_r_l{
+	float:left;
+	margin:0px 10px 0 0;
+}
+.searchBar .list2 li{
+	margin-bottom:5px;
+	height:25px;
+}
+.search_textBox {
+	width:80px;
+	height:15px;
+	margin:0px 3px;
+}
+.searchBar input,.searchBar select,.searchBar font{
+	float:left;
+}
+.searchBar font{
+	line-height:18px;
+	margin-right:3px;
+	color:#999;
+}
+.searchBar .btn_icon4{
+	margin-left:3px;
+	margin-top:1px;
+}
+/* uploadfile----------------------------------*/
+.uploadfile1_text{
+	float:left;
+	margin-right:10px;
+}
+.uploadfile1 .iconbtn_1{
+	float:left;
+}
+/* helpDialog----------------------------------*/
+.helpDialog{
+	padding:0 19px 0 19px;
+	text-align:left;
+}
+.helpDialog_title{
+	padding:10px 0;
+	text-align:center;
+	font-weight:bold;
+	font-size:15px;
+}
+.helpDialog_title2{
+	padding:0 0 5px;
+	color:#999;
+}
+.helpDialog_content{
+	padding:5px 0;
+	line-height:20px;
+}
+/* paginate----------------------------------*/
+.paginate_count{
+	float: left;
+	margin-right:30px;
+}
+.PerItem{
+	margin:0 5px;
+	font-weight:normal;
+	color:#000;
+}
+
+

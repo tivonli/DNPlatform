@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/hibernate/jta
+END
+JtaTransaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/hibernate/jta/JtaTransaction.java
+END
+JtaTransactionFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/hibernate/jta/JtaTransactionFactory.java
+END

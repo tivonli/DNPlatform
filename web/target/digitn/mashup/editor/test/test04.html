@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test page 01</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+    
+    <script type="text/javascript" src="test-content.js"></script>
+    <script type="text/javascript">
+         var printLocationInfo = function() {
+             test.printLn('href: '+'href: '+location.href);
+             test.printLn('protocol: '+location.protocol);
+             test.printLn('host: '+location.host);
+             test.printLn('port: '+location.port);
+             test.printLn('pathname: '+location.pathname);
+             test.printLn('search: '+location.search);
+             var his = history;
+             test.printLn(his.toString());
+             
+         }
+    </script>
+    
+     
+</head>
+<body onload="printLocationInfo()">
+    
+       
+</body>
+</html>

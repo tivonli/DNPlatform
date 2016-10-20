@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/digitnexus/!svn/ver/10597/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/persister
+END
+AttachmentHibernateArticlePersister.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/digitnexus/!svn/ver/10597/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/persister/AttachmentHibernateArticlePersister.java
+END
+FileStoreArticlePersister.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/digitnexus/!svn/ver/10208/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/persister/FileStoreArticlePersister.java
+END
+NoSqlArticlePersister.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/digitnexus/!svn/ver/10534/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/persister/NoSqlArticlePersister.java
+END
+UiOperationArticlePersister.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/digitnexus/!svn/ver/10208/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/persister/UiOperationArticlePersister.java
+END
+ArticlePersister.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/digitnexus/!svn/ver/10208/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/persister/ArticlePersister.java
+END
+HibernateArticlePersister.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/digitnexus/!svn/ver/10597/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/persister/HibernateArticlePersister.java
+END
+AttachmentNoSqlArticlePersister.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/digitnexus/!svn/ver/10514/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/persister/AttachmentNoSqlArticlePersister.java
+END
+ArticlePersisterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/digitnexus/!svn/ver/10208/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/persister/ArticlePersisterFactory.java
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/editor/stencils
+END
+basic.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/editor/stencils/basic.xml
+END
+flowchart.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/editor/stencils/flowchart.xml
+END
+lean_mapping.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/editor/stencils/lean_mapping.xml
+END
+bpmn.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/editor/stencils/bpmn.xml
+END
+arrows.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/editor/stencils/arrows.xml
+END
+general.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/editor/stencils/general.xml
+END

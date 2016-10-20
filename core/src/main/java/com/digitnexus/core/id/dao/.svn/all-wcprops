@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/digitnexus/!svn/ver/12445/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/dao
+END
+PojoIdGenerateDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/digitnexus/!svn/ver/12454/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/dao/PojoIdGenerateDaoImpl.java
+END
+BaseIdGenerateDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/digitnexus/!svn/ver/12444/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/dao/BaseIdGenerateDao.java
+END
+EpcGenerateDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/digitnexus/!svn/ver/12454/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/dao/EpcGenerateDaoImpl.java
+END
+AbstractBaseIdGenerateDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/digitnexus/!svn/ver/12454/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/dao/AbstractBaseIdGenerateDao.java
+END

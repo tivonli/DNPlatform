@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/digitnexus/!svn/ver/12058/m200/trunk/DNPlatform/web/src/main/webapp/js/report
+END
+drawoperator.js
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/digitnexus/!svn/ver/12058/m200/trunk/DNPlatform/web/src/main/webapp/js/report/drawoperator.js
+END
+bodata.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/digitnexus/!svn/ver/11385/m200/trunk/DNPlatform/web/src/main/webapp/js/report/bodata.js
+END
+mashuputils.js
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/digitnexus/!svn/ver/12044/m200/trunk/DNPlatform/web/src/main/webapp/js/report/mashuputils.js
+END
+reportingengine.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/digitnexus/!svn/ver/11997/m200/trunk/DNPlatform/web/src/main/webapp/js/report/reportingengine.js
+END
+filteroperator.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/digitnexus/!svn/ver/11163/m200/trunk/DNPlatform/web/src/main/webapp/js/report/filteroperator.js
+END

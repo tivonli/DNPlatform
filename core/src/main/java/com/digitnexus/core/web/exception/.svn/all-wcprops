@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/digitnexus/!svn/ver/8950/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/exception
+END
+UnauthorizedOperationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/digitnexus/!svn/ver/8950/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/exception/UnauthorizedOperationException.java
+END
+EditViewConfigurationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/exception/EditViewConfigurationException.java
+END

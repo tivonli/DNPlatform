@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 49
+target
+.classpath
+.project
+.settings
+test-output
+
+END

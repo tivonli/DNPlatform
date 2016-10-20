@@ -1,0 +1,639 @@
+create table "USERS" (
+  user_name varchar2(255 char) not null, 
+  clientID varchar2(255 char) not null, 
+  created_by varchar(20) default 'ADMIN', 
+  created_date TIMESTAMP(6) default CURRENT_TIMESTAMP, 
+  lock_version NUMBER(19) default 0, 
+  updated_by varchar2(255 char), 
+  updated_date TIMESTAMP(6) default CURRENT_TIMESTAMP, 
+  account_non_expired char(1 char) default 'Y', 
+  account_non_locked char(1 char) default 'Y', 
+  addr_line1 varchar2(255 char), 
+  addr_line2 varchar2(255 char), 
+  bemployee_id number(19,0), 
+  bphone varchar2(255 char), 
+  city varchar2(255 char), 
+  country varchar2(255 char), 
+  credentials_non_expired char(1 char) default 'Y', 
+  email varchar2(255 char) not null unique, 
+  employee_id number(19,0), 
+  enabled char(1 char) default 'Y', 
+  password_temporary char(1 char) default 'N',
+  full_name varchar2(255 char) not null, 
+  mobile varchar2(255 char), 
+  password varchar2(255 char) not null, 
+  postalcode varchar2(255 char), 
+  state varchar2(255 char), 
+  user_grp number(19,0),
+  localeString varchar(20) default 'en', 
+  org_id varchar(255),
+  primary key (user_name)
+ );
+
+
+--Quartz tables
+CREATE TABLE qrtz_job_details
+  (
+    JOB_NAME  VARCHAR2(200) NOT NULL,
+    JOB_GROUP VARCHAR2(200) NOT NULL,
+    DESCRIPTION VARCHAR2(250) NULL,
+    JOB_CLASS_NAME   VARCHAR2(250) NOT NULL, 
+    IS_DURABLE VARCHAR2(1) NOT NULL,
+    IS_VOLATILE VARCHAR2(1) NOT NULL,
+    IS_STATEFUL VARCHAR2(1) NOT NULL,
+    REQUESTS_RECOVERY VARCHAR2(1) NOT NULL,
+    JOB_DATA BLOB NULL,
+    PRIMARY KEY (JOB_NAME,JOB_GROUP)
+);
+CREATE TABLE qrtz_job_listeners
+  (
+    JOB_NAME  VARCHAR2(200) NOT NULL, 
+    JOB_GROUP VARCHAR2(200) NOT NULL,
+    JOB_LISTENER VARCHAR2(200) NOT NULL,
+    PRIMARY KEY (JOB_NAME,JOB_GROUP,JOB_LISTENER),
+    FOREIGN KEY (JOB_NAME,JOB_GROUP) 
+	REFERENCES QRTZ_JOB_DETAILS(JOB_NAME,JOB_GROUP)
+);
+CREATE TABLE qrtz_triggers
+  (
+    TRIGGER_NAME VARCHAR2(200) NOT NULL,
+    TRIGGER_GROUP VARCHAR2(200) NOT NULL,
+    JOB_NAME  VARCHAR2(200) NOT NULL, 
+    JOB_GROUP VARCHAR2(200) NOT NULL,
+    IS_VOLATILE VARCHAR2(1) NOT NULL,
+    DESCRIPTION VARCHAR2(250) NULL,
+    NEXT_FIRE_TIME NUMBER(13) NULL,
+    PREV_FIRE_TIME NUMBER(13) NULL,
+    PRIORITY NUMBER(13) NULL,
+    TRIGGER_STATE VARCHAR2(16) NOT NULL,
+    TRIGGER_TYPE VARCHAR2(8) NOT NULL,
+    START_TIME NUMBER(13) NOT NULL,
+    END_TIME NUMBER(13) NULL,
+    CALENDAR_NAME VARCHAR2(200) NULL,
+    MISFIRE_INSTR NUMBER(2) NULL,
+    JOB_DATA BLOB NULL,
+    PRIMARY KEY (TRIGGER_NAME,TRIGGER_GROUP),
+    FOREIGN KEY (JOB_NAME,JOB_GROUP) 
+	REFERENCES QRTZ_JOB_DETAILS(JOB_NAME,JOB_GROUP) 
+);
+CREATE TABLE qrtz_simple_triggers
+  (
+    TRIGGER_NAME VARCHAR2(200) NOT NULL,
+    TRIGGER_GROUP VARCHAR2(200) NOT NULL,
+    REPEAT_COUNT NUMBER(7) NOT NULL,
+    REPEAT_INTERVAL NUMBER(12) NOT NULL,
+    TIMES_TRIGGERED NUMBER(10) NOT NULL,
+    PRIMARY KEY (TRIGGER_NAME,TRIGGER_GROUP),
+    FOREIGN KEY (TRIGGER_NAME,TRIGGER_GROUP) 
+	REFERENCES QRTZ_TRIGGERS(TRIGGER_NAME,TRIGGER_GROUP)
+);
+CREATE TABLE qrtz_cron_triggers
+  (
+    TRIGGER_NAME VARCHAR2(200) NOT NULL,
+    TRIGGER_GROUP VARCHAR2(200) NOT NULL,
+    CRON_EXPRESSION VARCHAR2(120) NOT NULL,
+    TIME_ZONE_ID VARCHAR2(80),
+    PRIMARY KEY (TRIGGER_NAME,TRIGGER_GROUP),
+    FOREIGN KEY (TRIGGER_NAME,TRIGGER_GROUP) 
+	REFERENCES QRTZ_TRIGGERS(TRIGGER_NAME,TRIGGER_GROUP)
+);
+CREATE TABLE qrtz_blob_triggers
+  (
+    TRIGGER_NAME VARCHAR2(200) NOT NULL,
+    TRIGGER_GROUP VARCHAR2(200) NOT NULL,
+    BLOB_DATA BLOB NULL,
+    PRIMARY KEY (TRIGGER_NAME,TRIGGER_GROUP),
+    FOREIGN KEY (TRIGGER_NAME,TRIGGER_GROUP) 
+        REFERENCES QRTZ_TRIGGERS(TRIGGER_NAME,TRIGGER_GROUP)
+);
+CREATE TABLE qrtz_trigger_listeners
+  (
+    TRIGGER_NAME  VARCHAR2(200) NOT NULL, 
+    TRIGGER_GROUP VARCHAR2(200) NOT NULL,
+    TRIGGER_LISTENER VARCHAR2(200) NOT NULL,
+    PRIMARY KEY (TRIGGER_NAME,TRIGGER_GROUP,TRIGGER_LISTENER),
+    FOREIGN KEY (TRIGGER_NAME,TRIGGER_GROUP) 
+	REFERENCES QRTZ_TRIGGERS(TRIGGER_NAME,TRIGGER_GROUP)
+);
+CREATE TABLE qrtz_calendars
+  (
+    CALENDAR_NAME  VARCHAR2(200) NOT NULL, 
+    CALENDAR BLOB NOT NULL,
+    PRIMARY KEY (CALENDAR_NAME)
+);
+CREATE TABLE qrtz_paused_trigger_grps
+  (
+    TRIGGER_GROUP  VARCHAR2(200) NOT NULL, 
+    PRIMARY KEY (TRIGGER_GROUP)
+);
+CREATE TABLE qrtz_fired_triggers 
+  (
+    ENTRY_ID VARCHAR2(95) NOT NULL,
+    TRIGGER_NAME VARCHAR2(200) NOT NULL,
+    TRIGGER_GROUP VARCHAR2(200) NOT NULL,
+    IS_VOLATILE VARCHAR2(1) NOT NULL,
+    INSTANCE_NAME VARCHAR2(200) NOT NULL,
+    FIRED_TIME NUMBER(13) NOT NULL,
+    PRIORITY NUMBER(13) NOT NULL,
+    STATE VARCHAR2(16) NOT NULL,
+    JOB_NAME VARCHAR2(200) NULL,
+    JOB_GROUP VARCHAR2(200) NULL,
+    IS_STATEFUL VARCHAR2(1) NULL,
+    REQUESTS_RECOVERY VARCHAR2(1) NULL,
+    PRIMARY KEY (ENTRY_ID)
+);
+CREATE TABLE qrtz_scheduler_state 
+  (
+    INSTANCE_NAME VARCHAR2(200) NOT NULL,
+    LAST_CHECKIN_TIME NUMBER(13) NOT NULL,
+    CHECKIN_INTERVAL NUMBER(13) NOT NULL,
+    PRIMARY KEY (INSTANCE_NAME)
+);
+CREATE TABLE qrtz_locks
+  (
+    LOCK_NAME  VARCHAR2(40) NOT NULL, 
+    PRIMARY KEY (LOCK_NAME)
+);
+INSERT INTO qrtz_locks values('TRIGGER_ACCESS');
+INSERT INTO qrtz_locks values('JOB_ACCESS');
+INSERT INTO qrtz_locks values('CALENDAR_ACCESS');
+INSERT INTO qrtz_locks values('STATE_ACCESS');
+INSERT INTO qrtz_locks values('MISFIRE_ACCESS');
+create index idx_qrtz_j_req_recovery on qrtz_job_details(REQUESTS_RECOVERY);
+create index idx_qrtz_t_next_fire_time on qrtz_triggers(NEXT_FIRE_TIME);
+create index idx_qrtz_t_state on qrtz_triggers(TRIGGER_STATE);
+create index idx_qrtz_t_nft_st on qrtz_triggers(NEXT_FIRE_TIME,TRIGGER_STATE);
+create index idx_qrtz_t_volatile on qrtz_triggers(IS_VOLATILE);
+create index idx_qrtz_ft_trig_name on qrtz_fired_triggers(TRIGGER_NAME);
+create index idx_qrtz_ft_trig_group on qrtz_fired_triggers(TRIGGER_GROUP);
+create index idx_qrtz_ft_trig_nm_gp on qrtz_fired_triggers(TRIGGER_NAME,TRIGGER_GROUP);
+create index idx_qrtz_ft_trig_volatile on qrtz_fired_triggers(IS_VOLATILE);
+create index idx_qrtz_ft_trig_inst_name on qrtz_fired_triggers(INSTANCE_NAME);
+create index idx_qrtz_ft_job_name on qrtz_fired_triggers(JOB_NAME);
+create index idx_qrtz_ft_job_group on qrtz_fired_triggers(JOB_GROUP);
+create index idx_qrtz_ft_job_stateful on qrtz_fired_triggers(IS_STATEFUL);
+create index idx_qrtz_ft_job_req_recovery on qrtz_fired_triggers(REQUESTS_RECOVERY);
+
+create table ACT_GE_PROPERTY (
+    NAME_ NVARCHAR2(64),
+    VALUE_ NVARCHAR2(300),
+    REV_ INTEGER,
+    primary key (NAME_)
+);
+
+insert into ACT_GE_PROPERTY
+values ('schema.version', '5.8', 1);
+
+insert into ACT_GE_PROPERTY
+values ('schema.history', 'create(5.8)', 1);
+
+insert into ACT_GE_PROPERTY
+values ('next.dbid', '1', 1);
+
+create table ACT_GE_BYTEARRAY (
+    ID_ NVARCHAR2(64),
+    REV_ INTEGER,
+    NAME_ NVARCHAR2(255),
+    DEPLOYMENT_ID_ NVARCHAR2(64),
+    BYTES_ BLOB,
+    primary key (ID_)
+);
+
+create table ACT_RE_DEPLOYMENT (
+    ID_ NVARCHAR2(64),
+    NAME_ NVARCHAR2(255),
+    DEPLOY_TIME_ TIMESTAMP(6),
+    primary key (ID_)
+);
+
+create table ACT_RU_EXECUTION (
+    ID_ NVARCHAR2(64),
+    REV_ INTEGER,
+    PROC_INST_ID_ NVARCHAR2(64),
+    BUSINESS_KEY_ NVARCHAR2(255),
+    PARENT_ID_ NVARCHAR2(64),
+    PROC_DEF_ID_ NVARCHAR2(64),
+    SUPER_EXEC_ NVARCHAR2(64),
+    ACT_ID_ NVARCHAR2(255),
+    IS_ACTIVE_ NUMBER(1,0) CHECK (IS_ACTIVE_ IN (1,0)),
+    IS_CONCURRENT_ NUMBER(1,0) CHECK (IS_CONCURRENT_ IN (1,0)),
+    IS_SCOPE_ NUMBER(1,0) CHECK (IS_SCOPE_ IN (1,0)),
+    primary key (ID_)
+);
+
+create table ACT_RU_JOB (
+    ID_ NVARCHAR2(64) NOT NULL,
+    REV_ INTEGER,
+    TYPE_ NVARCHAR2(255) NOT NULL,
+    LOCK_EXP_TIME_ TIMESTAMP(6),
+    LOCK_OWNER_ NVARCHAR2(255),
+    EXCLUSIVE_ NUMBER(1,0) CHECK (EXCLUSIVE_ IN (1,0)),
+    EXECUTION_ID_ NVARCHAR2(64),
+    PROCESS_INSTANCE_ID_ NVARCHAR2(64),
+    RETRIES_ INTEGER,
+    EXCEPTION_STACK_ID_ NVARCHAR2(64),
+    EXCEPTION_MSG_ NVARCHAR2(2000),
+    DUEDATE_ TIMESTAMP(6),
+    REPEAT_ NVARCHAR2(255),
+    HANDLER_TYPE_ NVARCHAR2(255),
+    HANDLER_CFG_ NVARCHAR2(2000),
+    primary key (ID_)
+);
+
+create table ACT_RE_PROCDEF (
+    ID_ NVARCHAR2(64),
+    CATEGORY_ NVARCHAR2(255),
+    NAME_ NVARCHAR2(255),
+    KEY_ NVARCHAR2(255),
+    VERSION_ INTEGER,
+    DEPLOYMENT_ID_ NVARCHAR2(64),
+    RESOURCE_NAME_ NVARCHAR2(2000),
+    DGRM_RESOURCE_NAME_ varchar(4000),
+    HAS_START_FORM_KEY_ NUMBER(1,0) CHECK (HAS_START_FORM_KEY_ IN (1,0)),
+    primary key (ID_)
+);
+
+create table ACT_RU_TASK (
+    ID_ NVARCHAR2(64),
+    REV_ INTEGER,
+    EXECUTION_ID_ NVARCHAR2(64),
+    PROC_INST_ID_ NVARCHAR2(64),
+    PROC_DEF_ID_ NVARCHAR2(64),
+    NAME_ NVARCHAR2(255),
+    PARENT_TASK_ID_ NVARCHAR2(64),
+    DESCRIPTION_ NVARCHAR2(2000),
+    TASK_DEF_KEY_ NVARCHAR2(255),
+    OWNER_ NVARCHAR2(64),
+    ASSIGNEE_ NVARCHAR2(64),
+    DELEGATION_ NVARCHAR2(64),
+    PRIORITY_ INTEGER,
+    CREATE_TIME_ TIMESTAMP(6),
+    DUE_DATE_ TIMESTAMP(6),
+    primary key (ID_)
+);
+
+create table ACT_RU_IDENTITYLINK (
+    ID_ NVARCHAR2(64),
+    REV_ INTEGER,
+    GROUP_ID_ NVARCHAR2(64),
+    TYPE_ NVARCHAR2(255),
+    USER_ID_ NVARCHAR2(64),
+    TASK_ID_ NVARCHAR2(64),
+    primary key (ID_)
+);
+
+create table ACT_RU_VARIABLE (
+    ID_ NVARCHAR2(64) not null,
+    REV_ INTEGER,
+    TYPE_ NVARCHAR2(255) not null,
+    NAME_ NVARCHAR2(255) not null,
+    EXECUTION_ID_ NVARCHAR2(64),
+    PROC_INST_ID_ NVARCHAR2(64),
+    TASK_ID_ NVARCHAR2(64),
+    BYTEARRAY_ID_ NVARCHAR2(64),
+    DOUBLE_ NUMBER(*,10),
+    LONG_ NUMBER(19,0),
+    TEXT_ NVARCHAR2(2000),
+    TEXT2_ NVARCHAR2(2000),
+    primary key (ID_)
+);
+
+create index ACT_IDX_EXEC_BUSKEY on ACT_RU_EXECUTION(BUSINESS_KEY_);
+create index ACT_IDX_TASK_CREATE on ACT_RU_TASK(CREATE_TIME_);
+create index ACT_IDX_IDENT_LNK_USER on ACT_RU_IDENTITYLINK(USER_ID_);
+create index ACT_IDX_IDENT_LNK_GROUP on ACT_RU_IDENTITYLINK(GROUP_ID_);
+
+create index ACT_IDX_BYTEAR_DEPL on ACT_GE_BYTEARRAY(DEPLOYMENT_ID_);
+alter table ACT_GE_BYTEARRAY
+    add constraint ACT_FK_BYTEARR_DEPL
+    foreign key (DEPLOYMENT_ID_) 
+    references ACT_RE_DEPLOYMENT (ID_);
+
+create index ACT_IDX_EXE_PROCINST on ACT_RU_EXECUTION(PROC_INST_ID_);
+alter table ACT_RU_EXECUTION
+    add constraint ACT_FK_EXE_PROCINST
+    foreign key (PROC_INST_ID_) 
+    references ACT_RU_EXECUTION (ID_);
+
+create index ACT_IDX_EXE_PARENT on ACT_RU_EXECUTION(PARENT_ID_);
+alter table ACT_RU_EXECUTION
+    add constraint ACT_FK_EXE_PARENT
+    foreign key (PARENT_ID_) 
+    references ACT_RU_EXECUTION (ID_);
+    
+create index ACT_IDX_EXE_SUPER on ACT_RU_EXECUTION(SUPER_EXEC_);
+alter table ACT_RU_EXECUTION
+    add constraint ACT_FK_EXE_SUPER
+    foreign key (SUPER_EXEC_) 
+    references ACT_RU_EXECUTION (ID_);
+
+create index ACT_IDX_TSKASS_TASK on ACT_RU_IDENTITYLINK(TASK_ID_);
+alter table ACT_RU_IDENTITYLINK
+    add constraint ACT_FK_TSKASS_TASK
+    foreign key (TASK_ID_) 
+    references ACT_RU_TASK (ID_);
+    
+create index ACT_IDX_TASK_EXEC on ACT_RU_TASK(EXECUTION_ID_);
+alter table ACT_RU_TASK
+    add constraint ACT_FK_TASK_EXE
+    foreign key (EXECUTION_ID_)
+    references ACT_RU_EXECUTION (ID_);
+    
+create index ACT_IDX_TASK_PROCINST on ACT_RU_TASK(PROC_INST_ID_);
+alter table ACT_RU_TASK
+    add constraint ACT_FK_TASK_PROCINST
+    foreign key (PROC_INST_ID_)
+    references ACT_RU_EXECUTION (ID_);
+    
+create index ACT_IDX_TASK_PROCDEF on ACT_RU_TASK(PROC_DEF_ID_);
+alter table ACT_RU_TASK
+  add constraint ACT_FK_TASK_PROCDEF
+  foreign key (PROC_DEF_ID_)
+  references ACT_RE_PROCDEF (ID_);
+  
+create index ACT_IDX_VAR_EXE on ACT_RU_VARIABLE(EXECUTION_ID_);
+alter table ACT_RU_VARIABLE 
+    add constraint ACT_FK_VAR_EXE
+    foreign key (EXECUTION_ID_) 
+    references ACT_RU_EXECUTION (ID_);
+
+create index ACT_IDX_VAR_PROCINST on ACT_RU_VARIABLE(PROC_INST_ID_);
+alter table ACT_RU_VARIABLE
+    add constraint ACT_FK_VAR_PROCINST
+    foreign key (PROC_INST_ID_)
+    references ACT_RU_EXECUTION(ID_);
+
+create index ACT_IDX_VAR_BYTEARRAY on ACT_RU_VARIABLE(BYTEARRAY_ID_);
+alter table ACT_RU_VARIABLE 
+    add constraint ACT_FK_VAR_BYTEARRAY 
+    foreign key (BYTEARRAY_ID_) 
+    references ACT_GE_BYTEARRAY (ID_);
+
+create index ACT_IDX_JOB_EXCEPTION on ACT_RU_JOB(EXCEPTION_STACK_ID_);
+alter table ACT_RU_JOB 
+    add constraint ACT_FK_JOB_EXCEPTION
+    foreign key (EXCEPTION_STACK_ID_) 
+    references ACT_GE_BYTEARRAY (ID_);
+    
+-- see http://stackoverflow.com/questions/675398/how-can-i-constrain-multiple-columns-to-prevent-duplicates-but-ignore-null-value
+create unique index ACT_UNIQ_RU_BUS_KEY on ACT_RU_EXECUTION
+   (case when BUSINESS_KEY_ is null then null else PROC_DEF_ID_ end,
+    case when BUSINESS_KEY_ is null then null else BUSINESS_KEY_ end);
+create table ACT_CY_CONN_CONFIG (
+	ID_ NVARCHAR2(255) NOT NULL,
+	PLUGIN_ID_ NVARCHAR2(255) NOT NULL,
+	INSTANCE_NAME_ NVARCHAR2(255) NOT NULL, 
+	INSTANCE_ID_ NVARCHAR2(255) NOT NULL,  
+	USER_ NVARCHAR2(255),
+	GROUP_ NVARCHAR2(255),
+	VALUES_ clob,	
+	primary key (ID_)
+);
+
+create table ACT_CY_CONFIG (
+	ID_ NVARCHAR2(255) NOT NULL,
+	GROUP_ NVARCHAR2(255) NOT NULL,
+	KEY_ NVARCHAR2(255) NOT NULL,
+	VALUE_ clob,
+	primary key (ID_)
+);
+
+create table ACT_CY_LINK (
+	ID_ NVARCHAR2(255) NOT NULL,
+	SOURCE_CONNECTOR_ID_ NVARCHAR2(255),
+	SOURCE_ARTIFACT_ID_ NVARCHAR2(550),
+	SOURCE_ELEMENT_ID_ NVARCHAR2(255) DEFAULT NULL,
+	SOURCE_ELEMENT_NAME_ NVARCHAR2(255) DEFAULT NULL,
+	SOURCE_REVISION_ INTEGER DEFAULT NULL,
+	TARGET_CONNECTOR_ID_ NVARCHAR2(255),	
+	TARGET_ARTIFACT_ID_ NVARCHAR2(550),
+	TARGET_ELEMENT_ID_ NVARCHAR2(255) DEFAULT NULL,
+	TARGET_ELEMENT_NAME_ NVARCHAR2(255) DEFAULT NULL,
+	TARGET_REVISION_ INTEGER DEFAULT NULL,
+	LINK_TYPE_ NVARCHAR2(255),
+	COMMENT_ NVARCHAR2(1000),
+	LINKED_BOTH_WAYS_ NUMBER(1,0) CHECK (LINKED_BOTH_WAYS_ IN (1,0)),
+	primary key(ID_)
+);
+
+create table ACT_CY_PEOPLE_LINK (
+	ID_ NVARCHAR2(255) NOT NULL,
+	SOURCE_CONNECTOR_ID_ NVARCHAR2(255),
+	SOURCE_ARTIFACT_ID_ NVARCHAR2(550),
+	SOURCE_REVISION_ NUMBER(19) DEFAULT NULL,
+	USER_ID_ NVARCHAR2(255),
+	GROUP_ID_ NVARCHAR2(255),
+	LINK_TYPE_ NVARCHAR2(255),
+	COMMENT_ NVARCHAR2(1000),
+	primary key(ID_)
+);
+
+create table ACT_CY_TAG (
+	ID_ NVARCHAR2(255),
+	NAME_ NVARCHAR2(700),
+	CONNECTOR_ID_ NVARCHAR2(255),
+	ARTIFACT_ID_ NVARCHAR2(550),
+	ALIAS_ NVARCHAR2(255),
+	primary key(ID_)	
+);
+
+create table ACT_CY_COMMENT (
+	ID_ NVARCHAR2(255) NOT NULL,
+	CONNECTOR_ID_ NVARCHAR2(255) NOT NULL,
+	NODE_ID_ NVARCHAR2(550) NOT NULL,
+	ELEMENT_ID_ NVARCHAR2(255) DEFAULT NULL,
+	CONTENT_ NVARCHAR2(2000) NOT NULL,
+	AUTHOR_ NVARCHAR2(255),
+	DATE_ TIMESTAMP(6) NOT NULL,
+	ANSWERED_COMMENT_ID_ NVARCHAR2(255) DEFAULT NULL,
+	primary key(ID_)
+);
+
+create index ACT_CY_IDX_COMMENT on ACT_CY_COMMENT(ANSWERED_COMMENT_ID_);
+alter table ACT_CY_COMMENT 
+    add constraint FK_CY_COMMENT_COMMENT 
+    foreign key (ANSWERED_COMMENT_ID_) 
+    references ACT_CY_COMMENT (ID_);
+    
+create table ACT_CY_PROCESS_SOLUTION (
+	ID_ NVARCHAR2(128) NOT NULL,
+	LABEL_ NVARCHAR2(255) NOT NULL,
+	STATE_ NVARCHAR2(32) NOT NULL,
+	primary key(ID_)
+);
+
+create table ACT_CY_V_FOLDER (
+	ID_ NVARCHAR2(128) NOT NULL,
+	LABEL_ NVARCHAR2(255) NOT NULL,
+	CONNECTOR_ID_ NVARCHAR2(128) NOT NULL,
+	REFERENCED_NODE_ID_ NVARCHAR2(550) NOT NULL,
+	PROCESS_SOLUTION_ID_ NVARCHAR2(128) NOT NULL,
+	TYPE_ NVARCHAR2(32) NOT NULL,
+	primary key(ID_)
+);
+
+create index ACT_CY_IDX_V_FOLDER on ACT_CY_V_FOLDER(PROCESS_SOLUTION_ID_);
+alter table ACT_CY_V_FOLDER 
+    add constraint FK_CY_PROCESS_SOLUTION 
+    foreign key (PROCESS_SOLUTION_ID_) 
+    references ACT_CY_PROCESS_SOLUTION (ID_);
+
+create table ACT_ID_GROUP (
+    ID_ NVARCHAR2(64),
+    REV_ INTEGER,
+    NAME_ NVARCHAR2(255),
+    TYPE_ NVARCHAR2(255),
+    primary key (ID_)
+);
+
+create table ACT_ID_MEMBERSHIP (
+    USER_ID_ NVARCHAR2(64),
+    GROUP_ID_ NVARCHAR2(64),
+    primary key (USER_ID_, GROUP_ID_)
+);
+
+create table ACT_ID_USER (
+    ID_ NVARCHAR2(64),
+    REV_ INTEGER,
+    FIRST_ NVARCHAR2(255),
+    LAST_ NVARCHAR2(255),
+    EMAIL_ NVARCHAR2(255),
+    PWD_ NVARCHAR2(255),
+    PICTURE_ID_ NVARCHAR2(64),
+    primary key (ID_)
+);
+
+create table ACT_ID_INFO (
+    ID_ NVARCHAR2(64),
+    REV_ INTEGER,
+    USER_ID_ NVARCHAR2(64),
+    TYPE_ NVARCHAR2(64),
+    KEY_ NVARCHAR2(255),
+    VALUE_ NVARCHAR2(255),
+    PASSWORD_ BLOB,
+    PARENT_ID_ NVARCHAR2(255),
+    primary key (ID_)
+);
+
+create index ACT_IDX_MEMB_GROUP on ACT_ID_MEMBERSHIP(GROUP_ID_);
+alter table ACT_ID_MEMBERSHIP 
+    add constraint ACT_FK_MEMB_GROUP 
+    foreign key (GROUP_ID_) 
+    references ACT_ID_GROUP (ID_);
+
+create index ACT_IDX_MEMB_USER on ACT_ID_MEMBERSHIP(USER_ID_);
+alter table ACT_ID_MEMBERSHIP 
+    add constraint ACT_FK_MEMB_USER
+    foreign key (USER_ID_) 
+    references ACT_ID_USER (ID_);
+
+create table ACT_HI_PROCINST (
+    ID_ NVARCHAR2(64) not null,
+    PROC_INST_ID_ NVARCHAR2(64) not null,
+    BUSINESS_KEY_ NVARCHAR2(255),
+    PROC_DEF_ID_ NVARCHAR2(64) not null,
+    START_TIME_ TIMESTAMP(6) not null,
+    END_TIME_ TIMESTAMP(6),
+    DURATION_ NUMBER(19,0),
+    START_USER_ID_ NVARCHAR2(255),
+    START_ACT_ID_ NVARCHAR2(255),
+    END_ACT_ID_ NVARCHAR2(255),
+    SUPER_PROCESS_INSTANCE_ID_ NVARCHAR2(64),
+    primary key (ID_),
+    unique (PROC_INST_ID_)
+);
+
+create table ACT_HI_ACTINST (
+    ID_ NVARCHAR2(64) not null,
+    PROC_DEF_ID_ NVARCHAR2(64) not null,
+    PROC_INST_ID_ NVARCHAR2(64) not null,
+    EXECUTION_ID_ NVARCHAR2(64) not null,
+    ACT_ID_ NVARCHAR2(255) not null,
+    ACT_NAME_ NVARCHAR2(255),
+    ACT_TYPE_ NVARCHAR2(255) not null,
+    ASSIGNEE_ NVARCHAR2(64),
+    START_TIME_ TIMESTAMP(6) not null,
+    END_TIME_ TIMESTAMP(6),
+    DURATION_ NUMBER(19,0),
+    primary key (ID_)
+);
+
+create table ACT_HI_TASKINST (
+    ID_ NVARCHAR2(64) not null,
+    PROC_DEF_ID_ NVARCHAR2(64),
+    TASK_DEF_KEY_ NVARCHAR2(255),
+    PROC_INST_ID_ NVARCHAR2(64),
+    EXECUTION_ID_ NVARCHAR2(64),
+    PARENT_TASK_ID_ NVARCHAR2(64),
+    NAME_ NVARCHAR2(255),
+    DESCRIPTION_ NVARCHAR2(2000),
+    OWNER_ NVARCHAR2(64),
+    ASSIGNEE_ NVARCHAR2(64),
+    START_TIME_ TIMESTAMP(6) not null,
+    END_TIME_ TIMESTAMP(6),
+    DURATION_ NUMBER(19,0),
+    DELETE_REASON_ NVARCHAR2(2000),
+    PRIORITY_ INTEGER,
+    DUE_DATE_ TIMESTAMP(6),
+    primary key (ID_)
+);
+
+create table ACT_HI_DETAIL (
+    ID_ varchar(64) not null,
+    TYPE_ NVARCHAR2(255) not null,
+    PROC_INST_ID_ NVARCHAR2(64) not null,
+    EXECUTION_ID_ NVARCHAR2(64) not null,
+    TASK_ID_ NVARCHAR2(64),
+    ACT_INST_ID_ NVARCHAR2(64),
+    NAME_ NVARCHAR2(255) not null,
+    VAR_TYPE_ NVARCHAR2(64),
+    REV_ INTEGER,
+    TIME_ TIMESTAMP(6) not null,
+    BYTEARRAY_ID_ NVARCHAR2(64),
+    DOUBLE_ NUMBER(*,10),
+    LONG_ NUMBER(19,0),
+    TEXT_ NVARCHAR2(2000),
+    TEXT2_ NVARCHAR2(2000),
+    primary key (ID_)
+);
+
+create table ACT_HI_COMMENT (
+    ID_ NVARCHAR2(64) not null,
+    TYPE_ NVARCHAR2(255),
+    TIME_ TIMESTAMP(6) not null,
+    USER_ID_ NVARCHAR2(255),
+    TASK_ID_ NVARCHAR2(64),
+    PROC_INST_ID_ NVARCHAR2(64),
+    ACTION_ NVARCHAR2(255),
+    MESSAGE_ NVARCHAR2(2000),
+    FULL_MSG_ BLOB,
+    primary key (ID_)
+);
+
+create table ACT_HI_ATTACHMENT (
+    ID_ NVARCHAR2(64) not null,
+    REV_ INTEGER,
+    USER_ID_ NVARCHAR2(255),
+    NAME_ NVARCHAR2(255),
+    DESCRIPTION_ NVARCHAR2(2000),
+    TYPE_ NVARCHAR2(255),
+    TASK_ID_ NVARCHAR2(64),
+    PROC_INST_ID_ NVARCHAR2(64),
+    URL_ NVARCHAR2(2000),
+    CONTENT_ID_ NVARCHAR2(64),
+    primary key (ID_)
+);
+
+create index ACT_IDX_HI_PRO_INST_END on ACT_HI_PROCINST(END_TIME_);
+create index ACT_IDX_HI_PRO_I_BUSKEY on ACT_HI_PROCINST(BUSINESS_KEY_);
+create index ACT_IDX_HI_ACT_INST_START on ACT_HI_ACTINST(START_TIME_);
+create index ACT_IDX_HI_ACT_INST_END on ACT_HI_ACTINST(END_TIME_);
+create index ACT_IDX_HI_DETAIL_PROC_INST on ACT_HI_DETAIL(PROC_INST_ID_);
+create index ACT_IDX_HI_DETAIL_ACT_INST on ACT_HI_DETAIL(ACT_INST_ID_);
+create index ACT_IDX_HI_DETAIL_TIME on ACT_HI_DETAIL(TIME_);
+create index ACT_IDX_HI_DETAIL_NAME on ACT_HI_DETAIL(NAME_);
+
+-- see http://stackoverflow.com/questions/675398/how-can-i-constrain-multiple-columns-to-prevent-duplicates-but-ignore-null-value
+create unique index ACT_UNIQ_HI_BUS_KEY on ACT_HI_PROCINST
+   (case when BUSINESS_KEY_ is null then null else PROC_DEF_ID_ end,
+    case when BUSINESS_KEY_ is null then null else BUSINESS_KEY_ end);

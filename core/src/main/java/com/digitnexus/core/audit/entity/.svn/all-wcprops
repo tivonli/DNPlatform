@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/digitnexus/!svn/ver/11845/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/audit/entity
+END
+CustomEnversListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/digitnexus/!svn/ver/11845/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/audit/entity/CustomEnversListener.java
+END
+CustomRevisionEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/digitnexus/!svn/ver/11845/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/audit/entity/CustomRevisionEntity.java
+END

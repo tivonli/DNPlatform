@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/digitnexus/!svn/ver/10514/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/spring
+END
+AbstractBeanPostProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/spring/AbstractBeanPostProcessor.java
+END
+ServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/digitnexus/!svn/ver/10514/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/spring/ServiceLocator.java
+END
+ServiceLocatorInitializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/spring/ServiceLocatorInitializer.java
+END
+AOPUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/spring/AOPUtil.java
+END

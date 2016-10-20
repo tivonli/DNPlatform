@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/digitnexus/!svn/ver/11370/m200/trunk/DNPlatform/core/src/test/resources/properties
+END
+quartz.properties
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/digitnexus/!svn/ver/9836/m200/trunk/DNPlatform/core/src/test/resources/properties/quartz.properties
+END
+config-default.properties
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/digitnexus/!svn/ver/11370/m200/trunk/DNPlatform/core/src/test/resources/properties/config-default.properties
+END
+config-datasource.properties
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/digitnexus/!svn/ver/10172/m200/trunk/DNPlatform/core/src/test/resources/properties/config-datasource.properties
+END

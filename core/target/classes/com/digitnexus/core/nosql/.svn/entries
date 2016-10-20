@@ -1,0 +1,46 @@
+10
+
+dir
+12449
+http://192.168.10.18/svn/digitnexus/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/nosql
+http://192.168.10.18/svn/digitnexus
+
+
+
+2013-01-30T09:57:30.164452Z
+12211
+Santanu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e3dc6389-dc77-5747-9274-c5dc9cddce6e
+
+spring
+dir
+
+dao
+dir
+
+domain
+dir
+
+attachment
+dir
+
+annotation
+dir
+
+exception
+dir
+

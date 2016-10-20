@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="review_test">
+  <ReviewIssue id="HDFMXJBS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2013-02-21 :: 16:14:28:888 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2013-02-21 :: 16:27:49:020 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pony</ReviewerId>
+    <AssignedTo>pony</AssignedTo>
+    <File line="60">src/main/java/com/digitnexus/core/id/SimpleIdGenerateUtil.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>test</Summary>
+    <Description>need to deal with not support os
+</Description>
+    <Annotation>test</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HDFNB19R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2013-02-21 :: 16:24:58:671 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2013-02-21 :: 16:30:00:016 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pony</ReviewerId>
+    <AssignedTo>pony</AssignedTo>
+    <File line="11">src/main/java/com/digitnexus/core/id/domain/LocalIdInfo.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>class name need to change</Summary>
+    <Description>what's local id ?</Description>
+    <Annotation></Annotation>
+    <Revision>3.1</Revision>
+    <Resolution>item.resolution.label.validWontfix</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

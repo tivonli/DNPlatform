@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/digitnexus/!svn/ver/10239/m200/trunk/DNPlatform/core/src/test/db/oracle
+END
+create.sql
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/digitnexus/!svn/ver/10239/m200/trunk/DNPlatform/core/src/test/db/oracle/create.sql
+END
+create_security_data.sql
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/digitnexus/!svn/ver/10239/m200/trunk/DNPlatform/core/src/test/db/oracle/create_security_data.sql
+END
+drop.sql
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/digitnexus/!svn/ver/10239/m200/trunk/DNPlatform/core/src/test/db/oracle/drop.sql
+END
+create_constraints.sql
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/digitnexus/!svn/ver/10239/m200/trunk/DNPlatform/core/src/test/db/oracle/create_constraints.sql
+END
+drop_constraints.sql
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/digitnexus/!svn/ver/10239/m200/trunk/DNPlatform/core/src/test/db/oracle/drop_constraints.sql
+END
+create_init_data.sql
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/digitnexus/!svn/ver/10239/m200/trunk/DNPlatform/core/src/test/db/oracle/create_init_data.sql
+END
+create_views.sql
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/digitnexus/!svn/ver/10239/m200/trunk/DNPlatform/core/src/test/db/oracle/create_views.sql
+END

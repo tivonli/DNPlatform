@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/digitnexus/!svn/ver/10208/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/spring/hibernate4
+END
+UnitTestSessionContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/digitnexus/!svn/ver/10208/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/spring/hibernate4/UnitTestSessionContext.java
+END
+LocalSessionFactoryBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/spring/hibernate4/LocalSessionFactoryBean.java
+END

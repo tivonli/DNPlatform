@@ -1,0 +1,86 @@
+<search-criteria-configuration>
+	<!--Filter to display APPROVED and SHIPPED Purchase Orders -->
+	<search-criteria>
+		<name>PO_STATUS_APPROVED_SHIPPED</name>
+		<entity-name>com.digitnexus.scm.domain.PurchaseOrder</entity-name>
+		<i18n-display-key>po_status_approved_shipped</i18n-display-key>
+		<is-default-criteria>false</is-default-criteria>
+		<is-visible>false</is-visible>
+		<filter-expression>
+	      <field-name>status</field-name>
+	      <operator>NOTEQUAL</operator>
+	      <lower-value>DRAFT</lower-value>
+    	</filter-expression>
+    	<filter-expression>
+	      <field-name>status</field-name>
+	      <operator>NOTEQUAL</operator>
+	      <lower-value>SUBMITTED</lower-value>
+    	</filter-expression>
+    	<filter-expression>
+	      <field-name>status</field-name>
+	      <operator>NOTEQUAL</operator>
+	      <lower-value>REJECTED</lower-value>
+    	</filter-expression>
+    	<filter-expression>
+	      <field-name>status</field-name>
+	      <operator>NOTEQUAL</operator>
+	      <lower-value>FINISHED</lower-value>
+    	</filter-expression>
+	</search-criteria>
+	<!--Filter to display approved Po's. Used in currently in Do's reference to PO  -->
+	<search-criteria>
+		<name>purchaseOrder.approved</name>
+		<entity-name>com.digitnexus.scm.domain.PurchaseOrder</entity-name>
+		<is-default-criteria>false</is-default-criteria>
+		<is-visible>false</is-visible>
+		<i18n-display-key>purchaseOrder.approved</i18n-display-key>
+		<filter-expression>
+			<field-name>status</field-name>
+			<operator>EQUAL</operator>
+			<lower-value>APPROVED</lower-value>
+		</filter-expression>
+	</search-criteria>
+
+	<!--Filter to display APPROVED and SHIPPED Allocation Order -->
+	<search-criteria>
+		<name>AO_STATUS_APPROVED_SHIPPED</name>
+		<entity-name>com.digitnexus.scm.domain.AllocationOrder</entity-name>
+		<i18n-display-key>ao_status_approved_shipped</i18n-display-key>
+		<is-default-criteria>false</is-default-criteria>
+		<is-visible>false</is-visible>
+		<filter-expression>
+			<field-name>status</field-name>
+			<operator>NOTEQUAL</operator>
+			<lower-value>DRAFT</lower-value>
+		</filter-expression>
+		<filter-expression>
+			<field-name>status</field-name>
+			<operator>NOTEQUAL</operator>
+			<lower-value>SUBMITTED</lower-value>
+		</filter-expression>
+		<filter-expression>
+			<field-name>status</field-name>
+			<operator>NOTEQUAL</operator>
+			<lower-value>REJECTED</lower-value>
+		</filter-expression>
+		<filter-expression>
+			<field-name>status</field-name>
+			<operator>NOTEQUAL</operator>
+			<lower-value>FINISHED</lower-value>
+		</filter-expression>
+	</search-criteria>
+
+	<!-- Filter to display initial transportation -->
+	<search-criteria>
+		<name>Initial_Status_Transportation</name>
+		<entity-name>com.digitnexus.scm.domain.Transportation</entity-name>
+		<i18n-display-key>initial_status_transportation</i18n-display-key>
+		<is-default-criteria>false</is-default-criteria>
+		<is-visible>false</is-visible>
+		<filter-expression>
+			<field-name>status</field-name>
+			<operator>EQUAL</operator>
+			<lower-value>INITIAL</lower-value>
+		</filter-expression>
+	</search-criteria>
+</search-criteria-configuration>

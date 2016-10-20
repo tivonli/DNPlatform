@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/digitnexus/!svn/ver/12260/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/domain
+END
+PersistedObjectInformation.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/domain/PersistedObjectInformation.java
+END
+UserOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/digitnexus/!svn/ver/12211/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/domain/UserOperation.java
+END
+DataObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/digitnexus/!svn/ver/7236/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/domain/DataObject.java
+END
+PasswordResetInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/domain/PasswordResetInfo.java
+END
+Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/digitnexus/!svn/ver/12014/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/domain/Role.java
+END
+Organization.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/digitnexus/!svn/ver/12025/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/domain/Organization.java
+END
+FlexFieldsDataObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/digitnexus/!svn/ver/7952/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/domain/FlexFieldsDataObject.java
+END
+BaseCalendarEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/digitnexus/!svn/ver/12260/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/domain/BaseCalendarEvent.java
+END
+Email.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/domain/Email.java
+END
+Permission.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/digitnexus/!svn/ver/10595/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/domain/Permission.java
+END
+ResourceType.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/domain/ResourceType.java
+END
+RolePermissionAssociationDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/digitnexus/!svn/ver/12014/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/domain/RolePermissionAssociationDetail.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/digitnexus/!svn/ver/9480/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/domain/User.java
+END

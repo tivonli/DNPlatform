@@ -1,0 +1,139 @@
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=5,IE=9" ><![endif]-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graph Editor</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+    <link rel="stylesheet" type="text/css" href="styles/grapheditor.css">
+     <script type="text/javascript" src="../../js/report/closure/goog/base.js"></script>
+     <!--   <script type="text/javascript" src="../../js/jquery-1.7.1.js"></script> -->
+        <script type="text/javascript" src="../../js/report/mashuputils.js"></script>
+         <script type="text/javascript" src="../../js/report/bodata.js"></script>
+        <script type="text/javascript" src="../../js/report/reportingengine.js"></script> 
+        <script type="text/javascript" src="../../js/report/drawoperator.js"></script>
+        <script type="text/javascript" src="../../js/report/filteroperator.js"></script>
+        <script type="text/javascript" src="js/asyncuploadfile.js"></script>
+        
+    <link rel="stylesheet" type="text/css" href="../../js/report/styles/common.css">
+    <link rel="stylesheet" type="text/css"  href="../../js/report/closure/goog/css/menu.css">
+    <link rel="stylesheet" type="text/css"  href="../../js/report/closure/goog/css/menuitem.css">
+    <link rel="stylesheet" type="text/css"  href="../../js/report/closure/goog/css/menuseparator.css">
+    <link rel="stylesheet" type="text/css"  href="../../js/report/closure/goog/css/filteredmenu.css">
+    <link rel="stylesheet" type="text/css"  href="../../js/report/closure/goog/css/filterobservingmenuitem.css">
+    <link rel="stylesheet" type="text/css"  href="../../js/report/closure/goog/css/tristatemenuitem.css">
+    <link rel="stylesheet" type="text/css"  href="../../js/report/closure/goog/css/tree.css">
+    
+	<script type="text/javascript">
+            
+		// Public global variables
+		var MAX_REQUEST_SIZE = 10485760;
+		var MAX_WIDTH = 6000;
+		var MAX_HEIGHT = 6000;
+	
+		// URLs for save and export
+		var EXPORT_URL = '/mashup/editor/data/export';
+		var SAVE_URL = '/mashup/editor/data/save';
+		var OPEN_URL = '/mashup/editor/data/open';
+		var RESOURCES_PATH = 'resources';
+                var TUTORIAL_PATH = 'tutorial';
+		var RESOURCE_BASE = RESOURCES_PATH + '/grapheditor';
+		var STENCIL_PATH = 'stencils';
+		var IMAGE_PATH = 'images';
+		var STYLE_PATH = 'styles';
+		var CSS_PATH = 'styles';
+		var OPEN_FORM = 'open.html';
+	
+		// Specifies connection mode for touch devices (at least one should be true)
+		var tapAndHoldStartsConnection = true;
+		var showConnectorImg = true;
+                urlParams = {
+                    'lang': 'zh-CN',
+                    'storage': 'local'
+                    
+                }
+		mxLoadResources = false;
+		mxBasePath = '../lib';
+		mxLanguage = urlParams['lang'];
+		mxLanguages = ['zh'];
+	</script>
+        
+       
+         
+	<script type="text/javascript" src="../lib/js/mxClient.js"></script>
+	<script type="text/javascript" src="js/Editor.js"></script>
+	<script type="text/javascript" src="js/Graph.js"></script>
+	<script type="text/javascript" src="js/Shapes.js"></script>
+	<script type="text/javascript" src="js/EditorUi.js"></script>
+	<script type="text/javascript" src="js/Actions.js"></script>
+	<script type="text/javascript" src="js/Menus.js"></script>
+	<script type="text/javascript" src="js/Sidebar.js"></script>
+	<script type="text/javascript" src="js/Toolbar.js"></script>
+	<script type="text/javascript" src="js/Dialogs.js"></script>
+	<script type="text/javascript" src="jscolor/jscolor.js"></script>
+        <script type="text/javascript" src="js/Property.js"></script>
+        <script type="text/javascript" src="js/preferencemanager.js"></script>
+         <script type="text/javascript" src="js/mashupinfomanager.js"></script>
+        <script type="text/javascript" src="js/mashupconfigmanager.js"></script>  
+        <script type="text/javascript" src="js/mashupeditor.js"></script>
+        <script type="text/javascript" src="js/nodeproperties.js"></script>
+        <script type="text/javascript" src="js/report.js"></script>
+        
+        <script type="text/javascript" src="test/test-content.js"></script>   
+        <script type="text/javascript" src="../../js/report/rgraph/RGraph.common.core.js"></script>
+        <script type="text/javascript" src="../../js/report/rgraph/RGraph.common.tooltips.js"></script>
+        <script type="text/javascript" src="../../js/report/rgraph/RGraph.common.effects.js"></script>
+	<script type="text/javascript" src="../../js/report/rgraph/RGraph.common.dynamic.js"></script>
+	<script type="text/javascript" src="../../js/report/rgraph/RGraph.common.key.js"></script>
+        <script type="text/javascript" src="../../js/report/rgraph/RGraph.bar.js"></script>
+        <script type="text/javascript" src="../../js/report/rgraph/RGraph.line.js" ></script>
+        <script type="text/javascript" src="../../js/report/rgraph/RGraph.pie.js" ></script>
+        <script type="text/javascript" src="../../js/report/rgraph/RGraph.meter.js" ></script>
+        <script type="text/javascript" src="../../js/report/rgraph/RGraph.common.tooltips.js" ></script>
+        <script type="text/javascript"  src="../../js/report/rgraph/RGraph.funnel.js" ></script>
+        <script type="text/javascript"  src="../../js/report/rgraph/RGraph.common.context.js" ></script>
+        <script type="text/javascript"  src="../../js/report/rgraph/RGraph.hbar.js" ></script>
+        <script  type="text/javascript"  src="../../js/report/rgraph/RGraph.hprogress.js"></script>
+        <script   type="text/javascript"  src="../../js/report/rgraph/RGraph.radar.js" ></script>
+        <script   type="text/javascript"  src="../../js/report/rgraph/RGraph.rose.js" ></script>
+        <script   type="text/javascript"  src="../../js/report/rgraph/RGraph.rscatter.js" ></script>
+         
+        <script type="text/javascript">  
+		mxConstants.DEFAULT_HOTSPOT = 1;
+		mxConstants.HIGHLIGHT_COLOR = null;
+		// Enables guides
+		mxGraphHandler.prototype.guidesEnabled = true;
+		mxConnectionHandler.prototype.connectImage = new mxImage('images/touch-connector.png', 18, 18);
+		
+	    // Alt disables guides
+	    mxGuide.prototype.isEnabledForEvent = function(evt)
+	    {
+	    	return !mxEvent.isAltDown(evt);
+	    };	
+	    // Enables snapping waypoints to terminals
+	    mxEdgeHandler.prototype.snapToTerminals = true;
+	</script>
+        
+       <script type="text/javascript">
+            function initEditor() {
+                digitnexus.utils.startLoading();
+		// Extends EditorUi to update I/O action states
+		(function(){
+			var editorUiInit = EditorUi.prototype.init;
+			EditorUi.prototype.init = function(){
+				editorUiInit.apply(this, arguments);
+			};
+		})();
+        // digitnexus.editor.me.parse(testdata);
+        // new EditorUi(new Editor());
+	    digitnexus.editor.me.init(function() {
+	    	new EditorUi(new Editor());
+                digitnexus.editor.me.afterInit();
+                digitnexus.utils.stopLoading();
+	    });
+            }
+            
+        </script>
+</head>
+<body class="geEditor" onload="initEditor()">
+</body>
+</html>

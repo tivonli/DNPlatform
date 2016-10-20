@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ehcache.xsd" name="core_cache">
+
+	<!--
+   
+    The diskStore element is optional. It must be configured if you have overflowToDisk or diskPersistent enabled
+    for any cache. If it is not configured, a warning will be issues and java.io.tmpdir will be used.
+
+    diskStore has only one attribute - "path". It is the path to the directory where .data and .index files will be created.
+
+    If the path is a Java System Property it is replaced by its value in the
+    running VM.
+
+    The following properties are translated:
+    * user.home - User's home directory
+    * user.dir - User's current working directory
+    * java.io.tmpdir - Default temp file path
+    * ehcache.disk.store.dir - A system property you would normally specify on the command line
+          e.g. java -Dehcache.disk.store.dir=/u01/myapp/diskdir ...
+
+    Subdirectories can be specified below the property e.g. java.io.tmpdir/one
+
+    -->
+	<diskStore path="user.home/ehcache" />
+
+	<!-- CacheManagerEventListener ========================= Specifies a CacheManagerEventListenerFactory 
+		which is notified when Caches are added or removed from the CacheManager. 
+		The attributes of CacheManagerEventListenerFactory are: * class - a fully 
+		qualified factory class name * properties - comma separated properties having 
+		meaning only to the factory. Sets the fully qualified class name to be registered 
+		as the CacheManager event listener. The events include: * adding a Cache 
+		* removing a Cache Callbacks to listener methods are synchronous and unsynchronized. 
+		It is the responsibility of the implementer to safely handle the potential 
+		performance and thread safety issues depending on what their listener is 
+		doing. If no class is specified, no listener is created. There is no default. -->
+	<cacheManagerEventListenerFactory
+		class="" properties="" />
+
+
+    <!-- Cache configuration.
+
+    The following attributes are required.
+
+    name:
+    Sets the name of the cache. This is used to identify the cache. It must be unique.
+
+    maxElementsInMemory:
+    Sets the maximum number of objects that will be created in memory (0 == no limit)
+
+    maxElementsOnDisk:
+    Sets the maximum number of objects that will be maintained in the DiskStore
+    The default value is zero, meaning unlimited.
+
+    eternal:
+    Sets whether elements are eternal. If eternal,  timeouts are ignored and the
+    element is never expired.
+
+    overflowToDisk:
+    Sets whether elements can overflow to disk when the in-memory cache
+    has reached the maxInMemory limit.
+
+    The following attributes are optional.
+
+    timeToIdleSeconds:
+    Sets the time to idle for an element before it expires.
+    i.e. The maximum amount of time between accesses before an element expires
+    Is only used if the element is not eternal.
+    Optional attribute. A value of 0 means that an Element can idle for infinity.
+    The default value is 0.
+
+    timeToLiveSeconds:
+    Sets the time to live for an element before it expires.
+    i.e. The maximum time between creation time and when an element expires.
+    Is only used if the element is not eternal.
+    Optional attribute. A value of 0 means that and Element can live for infinity.
+    The default value is 0.
+
+    diskPersistent:
+    Whether the disk store persists between restarts of the Virtual Machine.
+    The default value is false.
+
+    diskExpiryThreadIntervalSeconds:
+    The number of seconds between runs of the disk expiry thread. The default value
+    is 120 seconds.
+
+    diskSpoolBufferSizeMB:
+    This is the size to allocate the DiskStore for a spool buffer. Writes are made
+    to this area and then asynchronously written to disk. The default size is 30MB.
+    Each spool buffer is used only by its cache. If you get OutOfMemory errors consider
+    lowering this value. To improve DiskStore performance consider increasing it. Trace level
+    logging in the DiskStore will show if put back ups are occurring.
+
+    memoryStoreEvictionPolicy:
+    Policy would be enforced upon reaching the maxElementsInMemory limit. Default
+    policy is Least Recently Used (specified as LRU). Other policies available -
+    First In First Out (specified as FIFO) and Less Frequently Used
+    (specified as LFU)
+-->
+
+	<!-- Mandatory Default Cache configuration. These settings will be applied 
+		to caches created programmtically using CacheManager.add(String cacheName). 
+		The defaultCache has an implicit name "default" which is a reserved cache 
+		name. -->
+	<defaultCache maxElementsInMemory="10000" eternal="false"
+		timeToIdleSeconds="300" timeToLiveSeconds="3600" overflowToDisk="true"
+		diskSpoolBufferSizeMB="30" maxElementsOnDisk="100000"
+		diskPersistent="false" diskExpiryThreadIntervalSeconds="120"
+		memoryStoreEvictionPolicy="LRU">
+		<cacheEventListenerFactory
+            class="net.sf.ehcache.distribution.jgroups.JGroupsCacheReplicatorFactory"
+            properties="replicateAsynchronously=true, replicatePuts=true,
+            replicateUpdates=true, replicateUpdatesViaCopy=true, replicateRemovals=true" />
+	</defaultCache>
+
+	<cache name="securityKey" maxElementsInMemory="100" eternal="false"
+		timeToIdleSeconds="3600" timeToLiveSeconds="86400" overflowToDisk="false"
+		maxElementsOnDisk="100" memoryStoreEvictionPolicy="LRU">
+		<cacheEventListenerFactory
+            class="net.sf.ehcache.distribution.jgroups.JGroupsCacheReplicatorFactory"
+            properties="replicateAsynchronously=true, replicatePuts=true,
+            replicateUpdates=true, replicateUpdatesViaCopy=true, replicateRemovals=true" />
+    </cache>
+	<cache name="configuration" maxElementsInMemory="1000" eternal="false"
+		timeToIdleSeconds="0" timeToLiveSeconds="0" overflowToDisk="false"
+		memoryStoreEvictionPolicy="LRU" >
+		<cacheEventListenerFactory
+            class="net.sf.ehcache.distribution.jgroups.JGroupsCacheReplicatorFactory"
+            properties="replicateAsynchronously=true, replicatePuts=true,
+            replicateUpdates=true, replicateUpdatesViaCopy=true, replicateRemovals=true" />
+    </cache>
+    <cache name="resultCache" maxElementsInMemory="10000" maxElementsOnDisk="100000" eternal="false"
+        overflowToDisk="true" diskPersistent="false" timeToIdleSeconds="1800" timeToLiveSeconds="1800"
+        memoryStoreEvictionPolicy="FIFO">
+        <cacheEventListenerFactory
+            class="net.sf.ehcache.distribution.jgroups.JGroupsCacheReplicatorFactory"
+            properties="replicateAsynchronously=true, replicatePuts=true,
+            replicateUpdates=true, replicateUpdatesViaCopy=true, replicateRemovals=true" />
+    </cache>
+	<cache name="IDCache" maxElementsInMemory="10000" eternal="true"
+		overflowToDisk="true" diskPersistent="false" maxElementsOnDisk="100000"
+		memoryStoreEvictionPolicy="LRU">
+	</cache>
+
+	<cacheManagerPeerProviderFactory
+		class="net.sf.ehcache.distribution.jgroups.JGroupsCacheManagerPeerProviderFactory" 
+		properties="connect=TCP(bind_port=7800):
+	   TCPPING(${core.cacheTcpPing}):
+	   VERIFY_SUSPECT(timeout=1500):
+	   pbcast.NAKACK(use_mcast_xmit=false;retransmit_timeout=300,600,1200,2400,4800;
+       discard_delivered_msgs=true):
+	   pbcast.GMS(join_timeout=5000;print_local_addr=false)"
+		propertySeparator="::" />
+
+</ehcache>

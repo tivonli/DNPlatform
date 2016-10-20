@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/digitnexus/!svn/ver/12158/m200/trunk/DNPlatform/core/src/main/resources/spring
+END
+applicationContext-geoservice.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/digitnexus/!svn/ver/9836/m200/trunk/DNPlatform/core/src/main/resources/spring/applicationContext-geoservice.xml
+END
+applicationContext-properties.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/digitnexus/!svn/ver/9726/m200/trunk/DNPlatform/core/src/main/resources/spring/applicationContext-properties.xml
+END
+applicationContext-scheduler.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/digitnexus/!svn/ver/12158/m200/trunk/DNPlatform/core/src/main/resources/spring/applicationContext-scheduler.xml
+END
+applicationContext-i18n.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/resources/spring/applicationContext-i18n.xml
+END
+applicationContext-freemarker.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/resources/spring/applicationContext-freemarker.xml
+END
+applicationContext-mongodb.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/digitnexus/!svn/ver/9836/m200/trunk/DNPlatform/core/src/main/resources/spring/applicationContext-mongodb.xml
+END
+applicationContext-common.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/digitnexus/!svn/ver/6415/m200/trunk/DNPlatform/core/src/main/resources/spring/applicationContext-common.xml
+END

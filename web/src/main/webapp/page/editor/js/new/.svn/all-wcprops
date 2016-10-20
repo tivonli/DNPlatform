@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/digitnexus/!svn/ver/5328/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/js/new
+END
+JsonOperator.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/js/new/JsonOperator.js
+END
+DataBaseNode.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/js/new/DataBaseNode.js
+END
+JoinOperator.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/digitnexus/!svn/ver/5328/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/js/new/JoinOperator.js
+END
+JdbcOperator.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/js/new/JdbcOperator.js
+END
+mashupModel.js
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/digitnexus/!svn/ver/5249/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/js/new/mashupModel.js
+END
+DataNode.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/js/new/DataNode.js
+END
+MashupCustomer.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/js/new/MashupCustomer.js
+END
+mashupOverlay.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/js/new/mashupOverlay.js
+END
+FusionChartOperator.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/js/new/FusionChartOperator.js
+END
+MashupNode.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/js/new/MashupNode.js
+END

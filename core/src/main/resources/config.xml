@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+  <header>
+    <result delimiterParsingDisabled="true" forceReloadCheck="true">
+      <expressionEngine config-class="org.apache.commons.configuration.tree.DefaultExpressionEngine"/>
+    </result>
+  </header>
+  <override>
+  
+    <!-- unit test properties -->
+    <properties fileName="properties/config-default.properties"
+        config-optional="true">
+        <reloadingStrategy refreshDelay="30000"
+            config-class="org.apache.commons.configuration.reloading.FileChangedReloadingStrategy" />
+    </properties>
+    <properties fileName="properties/config-integration.properties"
+        config-optional="true">
+        <reloadingStrategy refreshDelay="30000"
+            config-class="org.apache.commons.configuration.reloading.FileChangedReloadingStrategy" />
+    </properties>
+  
+    <!-- platform properties -->
+    <properties fileName="properties/default/config-default.properties"
+      config-optional="true">
+      <reloadingStrategy refreshDelay="30000"
+      config-class="org.apache.commons.configuration.reloading.FileChangedReloadingStrategy"/>
+    </properties>
+    <properties fileName="properties/default/config-integration.properties"
+      config-optional="true">
+      <reloadingStrategy refreshDelay="30000"
+      config-class="org.apache.commons.configuration.reloading.FileChangedReloadingStrategy"/>
+    </properties>
+    
+    <!-- xml fileName="test.xml" config-name="test"/> -->
+  </override>
+</configuration>

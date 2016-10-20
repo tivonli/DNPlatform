@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/digitnexus/!svn/ver/10534/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/nosql/dao
+END
+FileStoreDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/digitnexus/!svn/ver/10208/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/nosql/dao/FileStoreDaoTest.java
+END
+TestMongoDbEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/digitnexus/!svn/ver/10534/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/nosql/dao/TestMongoDbEntity.java
+END
+TestFileStoreEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/digitnexus/!svn/ver/10208/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/nosql/dao/TestFileStoreEntity.java
+END
+BaseNosqlDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/digitnexus/!svn/ver/10534/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/nosql/dao/BaseNosqlDaoTest.java
+END

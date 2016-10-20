@@ -1,0 +1,173 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>编辑器基本信息说明</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style/help.css">
+    </head>
+    <body>
+          <center><h1>编辑器基本信息说明</h1></center>
+        <div class="mainContainer">
+            
+            <div> 
+            <h3>编辑器说明</h3>
+            <p>
+                基于WEB技术实现图开编辑功能，只要用于报表设计；
+            </p>
+           </div>
+
+            <div> 
+                <h3>编辑器入口</h3>
+                <p>
+                    访问编辑器链接类似：
+                    http://192.168.18.28:8081/SCMVisibility/mashup/editor/index.html
+                </p>
+                <ul>
+                    <li>SCMVisibility: WEB服务上下文;</li>
+                    <li>/mashup/editor/index.html固定不变;</li>
+                    <li>IP和端口为服务器主机地址;</li>
+                </ul>
+             </div>
+             <div> 
+                <h3>编辑器截图</h3>
+                    <image src="../images/editor01.jpg"/>   
+             </div>
+            
+            <div> 
+            <h3>菜单栏</h3>
+            <p>菜单栏处于编辑器顶端，如图：</p>        
+             <image src="../images/menu.jpg"/>
+           </div>
+            
+             <div> 
+            <h3>工具栏</h3>
+            <p>
+                处于菜单栏下面，功能效时与菜单栏相同.<br/>
+                鼠标放上面有简单功能提示;
+            </p>
+           </div>
+            
+              <div> 
+            <h3>结点列表</h3>
+            <ul>
+                <li>显示当前服务器可用所有结点，包括操作符和数据源结点;</li>
+                <li>每项左边显示小图标（缩略图），效果与实际图标相同;</li>
+                <li>标题为结点名称;</li>
+                <li>鼠标置结点上时可以看到实际效果图;</li>
+                <li>结点分组显示，组可单击折叠.</li>
+            </ul>
+             <image src="../images/node.jpg"/>
+           </div>
+            
+              <div> 
+            <h3>大纲视图</h3>
+            <p>
+               查看事个编辑区整体效果，无论编辑区有多大多宽。用鼠标拖拽上面图形，编辑区跟着移动，当编辑区很大时，非常方便；
+            </p>
+           </div>
+            
+             <div> 
+            <h3>编辑区</h3>
+                 <ul>
+                <li>容纳结点区域;</li>
+                <li>通过拖拽结点列表结点到此区域实现新增结点;</li>
+                <li>双击结点将弹出结点属性对话框;</li>
+            </ul>
+           </div>
+            
+             <div> 
+            <h3>首选项</h3>
+                <ul>
+                <li>选择菜单单栏“窗口”-》“首选项”，弹出对话框;</li>
+                <li>修改相关值，相当于user profile;</li>
+                <li>查看用户设置;</li>
+                </ul>
+           </div>
+            
+            <div> 
+            <h3>Mash-up 列表</h3>
+            <p>
+               在工具栏上选择“取得当前服务器所有Mash-up定义”，将弹出列表对话框；<br/>
+               在列表上可实现打开和删除操作；<br/><br/>
+                <image src="../images/mashuplist.jpg"/>
+            </p>
+           </div>
+            
+            <div> 
+            <h3>报表视图</h3>
+            <p>
+               选中报表结点，也就是一个Mash-up definition图上的终点，如WebUIChart，然后单击工具栏“运行”按钮，将弹出运行此Mash-up definition结果效果图;<br/><br/>
+               <image src="../images/report.jpg"/>
+               此图通过Reporting engine生成。
+            </p>
+           </div>
+            
+            <div> 
+            <h3>新建Mash-up Definition对话框</h3>
+                 <ul>
+                     <li> 按工具栏上“新建”按钮，将弹出新建对话框，如图：<br/><br/>
+                    <image src="../images/newreport.jpg"/></li>
+                <li>在对话框中填入名称和述，选择模版；</li>
+                <li>若不选择模版，将新建一个空Mash-up Definition;</li>
+                </ul>
+           </div>
+            
+            <div> 
+            <h3>加入结点两点方式</h3>
+                <ul>
+                <li>用鼠标从左边结点列表拖拽结点到编辑区域放开鼠标；</li>
+                <li>单击结点导航按钮</li>
+                 <li>若结点是终点，没有导航按钮</li>
+                </ul>
+           </div>
+            
+            <div> 
+            <h3>编辑结点属性</h3>
+                <ul>
+                <li> 双击任一结点，将弹出结点属性对话框，如图：<br/><br/>
+                 <image src="../images/nodeproperty.jpg"/></li>
+                <li>结点属性随结点不同有所不同；</li>
+                 <li>如果结点有高级属性，选择”advance"按钮，将显示高级属性，同时该按钮显示为"hidden"按钮</li>
+                 <li>点击确定，完成编辑，<b>注意：此时并未保存到服务器。</b></li>
+                </ul>
+              
+           </div>
+            
+            <div> 
+            <h3>保存Mash-up</h3>
+                <ul>
+                 <li>工具栏有一个"保存"按钮，点击可实现保存;</li>
+                 <li>工具栏不有一个“保存为模版”按钮，可将当前内容保存为模版，下次新建可以直接使用些模版；</li>
+                 <li>保存前会对定义进行语法验证，将验证出错，将弹出提示对话框，直到改正后才能保存；</li>
+                </ul>
+           </div>
+            
+            <div> 
+            <h3>打开已存在Mash-up</h3>
+            <p>
+               通过前面的Mashup列表，可打开已存在定义，并可修改；
+            </p>
+           </div>
+            
+            <div> 
+            <h3>修改已存在Mash-up</h3>
+            <p>
+               打开mashup定义后，可正常对之进行编辑，运行，保存等操作；
+            </p>
+           </div>
+            
+            <div> 
+            <h3>在项目中查看报表</h3>
+            <p>
+               将mashup保存到服务器后，打开相应项目主页并进入到报表页面，可看到新建报表。
+            </p>
+           </div>
+            
+        </div>
+        
+    </body>
+</html>

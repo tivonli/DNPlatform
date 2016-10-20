@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/digitnexus/!svn/ver/12014/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/security/service
+END
+UserServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/digitnexus/!svn/ver/10688/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/security/service/UserServiceTest.java
+END
+RoleHierarchyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/digitnexus/!svn/ver/12014/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/security/service/RoleHierarchyTest.java
+END
+AdminServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/digitnexus/!svn/ver/10595/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/security/service/AdminServiceTest.java
+END

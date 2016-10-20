@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/digitnexus/!svn/ver/12057/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/audit/mdm/domain
+END
+ReceiveRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/digitnexus/!svn/ver/11859/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/audit/mdm/domain/ReceiveRecord.java
+END
+RecordStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/digitnexus/!svn/ver/11845/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/audit/mdm/domain/RecordStatus.java
+END
+ChangeType.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/digitnexus/!svn/ver/11845/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/audit/mdm/domain/ChangeType.java
+END
+MasterDataType.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/digitnexus/!svn/ver/11845/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/audit/mdm/domain/MasterDataType.java
+END
+SyncRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/digitnexus/!svn/ver/11845/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/audit/mdm/domain/SyncRecord.java
+END
+MasterDataObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/digitnexus/!svn/ver/12057/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/audit/mdm/domain/MasterDataObject.java
+END

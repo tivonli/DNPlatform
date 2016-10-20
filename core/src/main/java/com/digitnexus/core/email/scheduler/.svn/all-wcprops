@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/digitnexus/!svn/ver/12183/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/email/scheduler
+END
+EmailMessageScheduler.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/digitnexus/!svn/ver/12183/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/email/scheduler/EmailMessageScheduler.java
+END
+EmailSendJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/digitnexus/!svn/ver/10688/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/email/scheduler/EmailSendJob.java
+END

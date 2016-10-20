@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.digitnexus.core.id.business.PojoIdGenerateServiceTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="getSingleId"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="flushAndCloseSession"/>
+          <include name="getIdList"/>
+        </methods>
+      </class> <!-- com.digitnexus.core.id.business.PojoIdGenerateServiceTest -->
+      <class name="com.digitnexus.core.id.IdGenerateUtilTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="generateStrId"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="flushAndCloseSession"/>
+        </methods>
+      </class> <!-- com.digitnexus.core.id.IdGenerateUtilTest -->
+      <class name="com.digitnexus.core.id.PojoIdGeneratorHibernateTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="getId"/>
+          <include name="flushSession"/>
+        </methods>
+      </class> <!-- com.digitnexus.core.id.PojoIdGeneratorHibernateTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

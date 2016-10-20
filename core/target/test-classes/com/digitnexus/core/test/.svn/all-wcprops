@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/digitnexus/!svn/ver/12158/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test
+END
+BaseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/digitnexus/!svn/ver/10453/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/BaseTest.java
+END
+UriInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/digitnexus/!svn/ver/10596/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/UriInfo.java
+END
+BaseTransactionalTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/digitnexus/!svn/ver/10597/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/BaseTransactionalTest.java
+END

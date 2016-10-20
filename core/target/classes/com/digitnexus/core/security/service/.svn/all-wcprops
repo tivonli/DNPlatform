@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/digitnexus/!svn/ver/12213/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/security/service
+END
+UserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/digitnexus/!svn/ver/8583/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/security/service/UserService.java
+END
+UserServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/digitnexus/!svn/ver/10514/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/security/service/UserServiceImpl.java
+END
+AdminService.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/digitnexus/!svn/ver/12614/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/security/service/AdminService.java
+END
+AdminServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/digitnexus/!svn/ver/12614/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/security/service/AdminServiceImpl.java
+END
+RoleDeleteEventListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/digitnexus/!svn/ver/12213/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/security/service/RoleDeleteEventListener.java
+END
+RolePreSaveListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/digitnexus/!svn/ver/12614/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/security/service/RolePreSaveListener.java
+END

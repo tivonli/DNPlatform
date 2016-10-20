@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>test new reporting engine</title>
+       
+        <script type="text/javascript" src="../../report/closure/goog/base.js"></script>
+        <script type="text/javascript" src="../../report/mashuputils.js"></script>
+        <script type="text/javascript" src="../../report/reportingengine.js"></script> 
+	<script type="text/javascript">
+	function println(msg) {
+            document.write(msg)
+            document.write('<br/>')
+        }
+	window.onload = function() {
+            document.write("IE9 :" + 
+                digitnexus.utils.isBroswer(digitnexus.utils.Constants.IE9))
+            document.write('<br/>')
+            document.write("IE8 :" + 
+                digitnexus.utils.isBroswer(digitnexus.utils.Constants.IE8))
+            document.write('<br/>')
+            document.write("IE7 :" + 
+                digitnexus.utils.isBroswer(digitnexus.utils.Constants.IE7))
+            document.write('<br/>')
+            document.write("IE6 :" + 
+                digitnexus.utils.isBroswer(digitnexus.utils.Constants.IE6))
+            document.write('<br/>')
+            document.write("chrome :" + 
+                digitnexus.utils.isBroswer(digitnexus.utils.Constants.chrome))
+            document.write('<br/>')
+            document.write("firefox :" + 
+                digitnexus.utils.isBroswer(digitnexus.utils.Constants.firefox))
+            document.write('<br/>')
+            document.write("opera :" + 
+                digitnexus.utils.isBroswer(digitnexus.utils.Constants.opera))
+            document.write('<br/>')
+            document.write("safari :" + 
+                digitnexus.utils.isBroswer(digitnexus.utils.Constants.safari))
+            document.write('<br/>')
+             document.write(digitnexus.utils.version())
+             
+        println('digitnexus.utils.isIngeger 9999:  '+digitnexus.utils.isIngeger('999'));
+        println('digitnexus.utils.isIngeger sss:  '+digitnexus.utils.isIngeger('sss'));
+        println('digitnexus.utils.isFloat 9999.999: '+digitnexus.utils.isFloat('9999.999'));
+        println('digitnexus.utils.isFloat sss.sss: '+digitnexus.utils.isFloat('sss.sss'));
+        }
+	
+        
+ </script>
+</head>
+
+<body>
+
+</body>
+</html>

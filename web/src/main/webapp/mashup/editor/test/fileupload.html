@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test page 01</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+     <script type="text/javascript" src="../js/jquery.js"></script>
+     <script type="text/javascript" src="../js/bBank_4.5r.js"></script>
+     
+   <script type="text/javascript">
+       /*
+          var objForm = document.createElement("form");
+                objForm.action = "/SCMVisibility/rest/mashupeditor/upload";
+                objForm.target = "hiddenIframe";
+                objForm.encoding = "multipart/form-data";
+                objForm.method = "post";
+                objForm.id = "hiddenFileUploadForm";
+                objForm.style.display = "none";
+                iframe.attr('flag','false');
+                var cns = f.childNodes;
+               for (var i = 0;i < cns.length; i++) {
+                   //if(cns[i].type =='file') {
+                    var input = cns[i].cloneNode(true);
+                    objForm.appendChild(input);
+                  // }
+                }
+              */
+             
+       var complete = function (frame) {
+           var f = $(frame).attr('flag');
+           if(f!= 'true') {
+               $(frame).attr('flag','true');
+               return;
+           }
+           if(frame) {
+               document.body.removeChild(frame);
+           }
+            var n = document.getElementById('hiddenFileUploadForm');
+           if(n) {
+               document.body.removeChild(n);
+           }
+       }
+       
+      function checkSubmit(f){
+          var iframe = $('<iframe id="hiddenIframe" name="hiddenIframe" src="about:blank" style="display:none;" onload="complete(this)"></iframe>')
+          iframe.attr('flag','false');
+          $(document.body).append(iframe);
+           
+          var objForm = document.createElement("form");
+          document.body.appendChild(objForm);
+          objForm.action = "/SCMVisibility/rest/mashupeditor/upload";
+          objForm.target = "hiddenIframe";
+          objForm.encoding = "multipart/form-data";
+          objForm.method = "post";
+          objForm.id = "hiddenFileUploadForm";
+          objForm.style.display = "none";
+        
+          var cns = f.childNodes;
+          for (var i = 0;i < cns.length; i++) {
+              var input = cns[i].cloneNode(true);
+              objForm.appendChild(input);
+           }
+           
+            $(objForm).ajaxForm(function() { 
+                alert("Thank you for your comment!"); 
+            }); 
+          return false;
+      }
+
+   </script>
+
+</head>
+
+<body >
+    <form id="fileupload" action="/SCMVisibility/rest/mashupeditor/upload" method="post" enctype="multipart/form-data"
+          target="hiddenIframe" onsubmit="return checkSubmit(this)">
+        <input id="file1" type="file" name="file1" /><br/>
+        <input type="submit" value="upload"/>
+    </form>
+    
+</body>
+
+</html>

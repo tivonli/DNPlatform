@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="
+     http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+     http://www.springframework.org/schema/jee 
+     http://www.springframework.org/schema/jee/spring-jee-3.1.xsd">
+     
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"><value>${db.driver}</value></property>
+		<property name="url"><value>${db.url}</value></property>
+		<property name="username"><value>${db.userid}</value></property>
+		<property name="password"><value>${db.pwd}</value></property>
+		<property name="initialSize"><value>2</value></property>
+		<property name="maxActive"><value>20</value></property>
+        <property name="validationQuery"><value>select 1 from dual</value></property>
+	</bean>
+<!--  
+	<bean id="dataSource" class=" com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="driverClass"><value>${db.driver}</value></property>
+        <property name="jdbcUrl" value="${db.url}" />
+        <property name="user" value="${db.userid}" />
+        <property name="password" value="${db.pwd}" />
+        <property name="minPoolSize" value="2" />
+        <property name="maxPoolSize" value="20" />
+        <property name="maxIdleTime" value="10" />
+        <property name="acquireIncrement" value="2" />
+        <property name="maxStatements" value="10" />
+        <property name="initialPoolSize" value="2" />
+        <property name="idleConnectionTestPeriod" value="300" />
+        <property name="acquireRetryAttempts" value="3" />
+        <property name="breakAfterAcquireFailure" value="false" />
+        <property name="testConnectionOnCheckout" value="false" />
+    </bean>
+    -->
+	<bean id="sessionFactory" class="com.digitnexus.core.spring.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<value>
+				hibernate.dialect=org.hibernate.dialect.Oracle10gDialect
+				hibernate.bytecode.use_reflection_optimizer=true
+				hibernate.cache.use_second_level_cache=true
+				hibernate.cache.use_query_cache=true
+				hibernate.cache.region.factory_class=org.hibernate.cache.ehcache.EhCacheRegionFactory
+				hibernate.current_session_context_class=com.digitnexus.core.spring.hibernate4.UnitTestSessionContext
+				hibernate.show_sql=false
+            </value>
+		</property>
+		<property name="packagesToScan">
+			<list>
+				<value>com.digitnexus</value>
+			</list>
+		</property>
+		<property name="interceptor">
+	        <bean class="com.digitnexus.core.audit.hibernate.interceptor.DataObjectInterceptor"/>
+	    </property>
+	</bean>
+	
+	
+</beans>

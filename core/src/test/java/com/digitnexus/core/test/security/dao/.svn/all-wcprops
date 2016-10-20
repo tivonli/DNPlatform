@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/digitnexus/!svn/ver/11583/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/security/dao
+END
+UserDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/digitnexus/!svn/ver/10454/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/security/dao/UserDaoTest.java
+END
+AdminDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/digitnexus/!svn/ver/11583/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/security/dao/AdminDaoTest.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/digitnexus/!svn/ver/12445/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/domain
+END
+EpcId.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/digitnexus/!svn/ver/12444/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/domain/EpcId.java
+END
+PojoId.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/digitnexus/!svn/ver/12444/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/domain/PojoId.java
+END
+IdHeader.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/digitnexus/!svn/ver/12444/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/domain/IdHeader.java
+END
+BaseId.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/digitnexus/!svn/ver/12451/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/domain/BaseId.java
+END

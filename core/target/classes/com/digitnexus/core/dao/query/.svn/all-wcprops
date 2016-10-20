@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/digitnexus/!svn/ver/8942/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/dao/query
+END
+Root.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/digitnexus/!svn/ver/8942/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/dao/query/Root.java
+END
+Condition.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/digitnexus/!svn/ver/8922/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/dao/query/Condition.java
+END
+DetachedCondition.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/digitnexus/!svn/ver/8132/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/dao/query/DetachedCondition.java
+END
+HQLQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/digitnexus/!svn/ver/8679/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/dao/query/HQLQuery.java
+END

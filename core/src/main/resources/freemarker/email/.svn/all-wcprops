@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/digitnexus/!svn/ver/8574/m200/trunk/DNPlatform/core/src/main/resources/freemarker/email
+END
+user_info_send_subject.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/digitnexus/!svn/ver/8523/m200/trunk/DNPlatform/core/src/main/resources/freemarker/email/user_info_send_subject.ftl
+END
+user_info_send.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/resources/freemarker/email/user_info_send.ftl
+END
+user_info_send_subject_zh_CN.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/digitnexus/!svn/ver/8523/m200/trunk/DNPlatform/core/src/main/resources/freemarker/email/user_info_send_subject_zh_CN.ftl
+END
+user_info_send_zh_CN.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/digitnexus/!svn/ver/8574/m200/trunk/DNPlatform/core/src/main/resources/freemarker/email/user_info_send_zh_CN.ftl
+END
+reset_info_send_subject.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/digitnexus/!svn/ver/8574/m200/trunk/DNPlatform/core/src/main/resources/freemarker/email/reset_info_send_subject.ftl
+END
+reset_info_send.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/resources/freemarker/email/reset_info_send.ftl
+END
+reset_info_send_subject_zh_CN.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/digitnexus/!svn/ver/8574/m200/trunk/DNPlatform/core/src/main/resources/freemarker/email/reset_info_send_subject_zh_CN.ftl
+END
+reset_info_send_zh_CN.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/resources/freemarker/email/reset_info_send_zh_CN.ftl
+END

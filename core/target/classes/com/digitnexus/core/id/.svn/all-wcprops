@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/digitnexus/!svn/ver/12446/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id
+END
+SimpleIdGenerateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/digitnexus/!svn/ver/12444/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/SimpleIdGenerateUtil.java
+END
+EpcGenerateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/digitnexus/!svn/ver/12444/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/EpcGenerateUtil.java
+END
+IdGenerateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/digitnexus/!svn/ver/12444/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/IdGenerateUtil.java
+END
+EpcSchema.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/digitnexus/!svn/ver/12444/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/EpcSchema.java
+END
+IDException.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/IDException.java
+END
+PojoIdGeneratorHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/digitnexus/!svn/ver/6989/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/PojoIdGeneratorHibernate.java
+END

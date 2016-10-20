@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>test new reporting engine</title>
+    <script src="../RGraph.common.core.js" ></script>
+    <script src="../RGraph.bar.js" ></script>
+    
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/digitnexus-reportingEngine.js"></script>
+	<script type="text/javascript">
+    	/* $(document).ready(function() {
+    	 //register operator instance
+		 digitnexus.re.operatorManager.registerOperator(new digitnexus.test.DrawOperator());
+		 digitnexus.re.operatorManager.registerOperator(new digitnexus.test.ConditionOperator());
+		});  */
+		var context = digitnexus.re.context = "/SCMVisibility";
+	function executeMashup() {
+		//request and run the test mash-up
+		var url = "/SCMVisibility/rest/mashup_a/data/" + $("#mashupUrl").attr("value");
+		
+		digitnexus.re.networkManager.requestMashup(
+			  url,
+			  null,
+			  function(mashup) {
+				if(null!= mashup) {
+					var canvas = document.getElementById('executeResult1');
+					var context = canvas.getContext('2d');
+					context.clearRect(0, 0, canvas.width, canvas.height);
+					  var w = canvas.width;
+					  canvas.width = 1;
+					  canvas.width = w;
+					
+					digitnexus.re.mashupManager.executeMashup(mashup.header.mashupId,false, "executeResult1");
+					//digitnexus.re.mashupManager.executeMashup(mashup.header.mashupId,false, "executeResul3");
+				}
+			} 
+			
+		);
+		
+		 digitnexus.re.networkManager.requestMashup(
+			 "/SCMVisibility/rest/mashup_a/data/209",
+			  null,
+			 function(mashup) {
+				if(null!= mashup) {
+					//digitnexus.re.mashupManager.executeMashup(mashup.header.mashupId,false, "executeResult2");
+					//digitnexus.re.mashupManager.executeMashup(mashup.header.mashupId,false, "executeResul4");
+				}
+			} 
+		
+		);
+	}
+		
+	function  setReportList(json) {
+		var jsonObj = eval('(' + json+')');
+		if(null == jsonObj) {
+			console.log("no report list found");
+			return;
+		}
+		var rl = jsonObj.body.data;
+		if(null == rl) {
+			console.log("no report list found");
+			return;
+		}
+		
+		var reportNode = $("#reportList").empty();
+		
+		for(index = 0; index < rl.length; index += 1 ) {
+			var rp = rl[index];
+			var url = context +  digitnexus.re.Constants.MASHUP_URL + rp.id
+			var aTag ="<a href="+url+">"
+			var aLink = $(aTag).append(rp.name).val(url).bind('click',function(source) {	
+				var ulr = $(this).attr('href');
+				digitnexus.re.networkManager.requestMashup(
+						   ulr,
+						  null,
+						  function(mashup) {
+							if(null!= mashup) {
+								var canvas = document.getElementById('executeResult1');
+								var context = canvas.getContext('2d');
+								context.clearRect(0, 0, canvas.width, canvas.height);
+								  var w = canvas.width;
+								  canvas.width = 1;
+								  canvas.width = w;
+								digitnexus.re.mashupManager.executeMashup(mashup.header.mashupId,false, "executeResult1");
+							}
+						} 
+						
+					);
+				 return false;
+            });
+			
+			reportNode.append(aLink).append($("<br>"));
+		}
+	}
+	
+	function getReportGroup() {
+		var groups = digitnexus.re.utils.getReportGroup();
+		var groupNode = $("#reportGroup").empty();
+		for(index = 0; index < groups.length; index += 3 ) {
+			var groupId = groups[index];
+			var aLink = $("<a>").append(groups[index+1]).attr("href","#").bind('click',function() {
+				 digitnexus.re.utils.getReportList(
+                         digitnexus.re.Constants.REPORT_FOR_BROWSER,
+                         groupId, 
+                         function(json) {
+                               setReportList(json);
+                          }
+				 );
+				 return false;
+            });
+			
+			groupNode.append(aLink).append($("<br>"));
+		}
+		
+		if(groups[0] != null) {
+			digitnexus.re.utils.getReportList(
+                    digitnexus.re.Constants.REPORT_FOR_BROWSER,
+                    groups[0], 
+                    function(json) {
+                          setReportList(json);
+                     }
+			 );
+		}
+	}
+	
+	$(document).ready(getReportGroup);
+	
+ </script>
+</head>
+
+<body>
+
+     <center><h1>报表测试</h1></center><br/><br/>
+	
+ <center>
+ <table border="1" style="width:80%">
+ 
+    <tr>
+    <td id="reportGroup" style="width:20%; vertical-align:top">
+    </td>
+    <td id="reportList" style="width:20%; vertical-align:top">
+    </td>
+    
+    <td> <canvas id="executeResult1" width="550" height="400">[No canvas support]</canvas></td>
+    </tr>
+ </table>
+ </center>
+ 
+ <!-- <div style="height: 805px; ">
+  <div id="divId" style="height: 100%; width: 100%; margin-left: 5cm">
+    <input id="mashupUrl" type="text" name="mashupUrl" value="109" style="margin-left: 7cm"/>
+     <input type="button" value="Test Mashup" onclick="getReportGroup();" >
+ </div>
+		<div id="divId" style="height: 450px; width: 615px"><canvas id="executeResult1" width="450" height="400">[No canvas support]</canvas></div>
+		<div style="width: 765px; height: 207px"> <canvas id="executeResult2" width="450" height="200">[No canvas support]</canvas></div>
+		<div style="height: 201px; width: 781px"><canvas id="executeResul3" width="450" height="200">[No canvas support]</canvas></div>
+		<div style="height: 174px; width: 695px"><canvas id="executeResul4" width="450" height="200">[No canvas support]</canvas></div>
+	</div> -->
+</body>
+</html>
