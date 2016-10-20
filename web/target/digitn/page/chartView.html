@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../common/charts/FusionCharts.js" ></script>
+
+<style type="text/css">   
+.table_1{
+	border-collapse:collapse;
+	table-layout:fixed;
+	line-height:18px;
+}
+.table_1 td, .table_1 th{
+	padding:2px 5px;
+	border:1px solid #000;
+} 
+</style>
+</head>
+<center>
+<body>
+<script>
+
+    var xmlHttp=null;
+    var tableName = null;
+    var headers = null;
+    var rows = null;
+	GetXmlHttpObject();
+	intial();
+	
+	function sendRequest()
+	{
+	
+	var toolNameSelect = document.getElementById('ToolNameSelect');
+	var selectedvalue = toolNameSelect[toolNameSelect.selectedIndex].value;
+	var selectedtext =  toolNameSelect[toolNameSelect.selectedIndex].text;
+	
+	var chartType = document.getElementById('chartType');
+	var chartTypeSelectedValue = chartType[chartType.selectedIndex].value;
+	var url= null;
+	if(selectedvalue == ''){
+		url="http://localhost:8081/autoid/rest/bonew/tableBO/AssetUsage?chartType=tableReport";
+	}else {
+		url="http://localhost:8081/autoid/rest/bonew/tableBO/assetusage?chartType=pieChart&pieChartType=horizontal&header=ToolName&value=" + selectedvalue;
+	}
+	
+	if(chartTypeSelectedValue == 'Bar')
+	   xmlHttp.onreadystatechange=generateBarChart;
+	else if(chartTypeSelectedValue == 'Pie')
+		xmlHttp.onreadystatechange=generatePieChart;
+	else
+		xmlHttp.onreadystatechange=generateTableReport;
+	xmlHttp.open("GET",url,true);
+	xmlHttp.send(null);
+	}
+	
+	function sendRequest_down()
+	{
+	
+	var HeaderSelect = document.getElementById('HeaderSelect');
+	var selectedvalue = HeaderSelect[HeaderSelect.selectedIndex].value;
+	
+	var chartType = document.getElementById('chartType_down');
+	var chartTypeSelectedValue = chartType[chartType.selectedIndex].value;
+	
+	var url="http://localhost:8081/autoid/rest/bonew/tableBO/assetusage?chartType=pieChart&pieChartType=vertical&headerIndexs=0," + selectedvalue;
+	if(chartTypeSelectedValue == 'Bar')
+	   xmlHttp.onreadystatechange=generateBarChart_down;
+	else if(chartTypeSelectedValue == 'Pie')
+		xmlHttp.onreadystatechange=generatePieChart_down;
+	else
+		xmlHttp.onreadystatechange=generateTableReport_down;
+	xmlHttp.open("GET",url,true);
+	xmlHttp.send(null);
+	}
+
+	function GetXmlHttpObject()
+	{
+	  try
+	    {
+	    // Firefox, Opera 8.0+, Safari
+	    xmlHttp=new XMLHttpRequest();
+	    }
+	  catch (e)
+	    {
+	    // Internet Explorer
+	    try
+	      {
+	      xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+	      }
+	    catch (e)
+	      {
+	      xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+	      }
+	    }
+	  if (xmlHttp==null)
+	    {
+	    alert ("您的浏览器不支持AJAX！");
+	    return;
+	    }
+	  return xmlHttp;
+	}
+	
+	function intial(){
+		var url="http://localhost:8081/autoid/rest/bonew/tableBO/AssetUsage?chartType=tableReport";
+		xmlHttp.onreadystatechange=handleJson;
+		xmlHttp.open("GET",url,true);
+		xmlHttp.send(null);
+	}
+	
+	function handleJson(){
+		if(xmlHttp.readyState == 4){                
+			if(xmlHttp.status == 200){                      
+				parseJson();
+				generateToolNameSelect();
+				generateHeaderSelect();
+			}         
+		}
+	}
+	
+	function generateBarChart(){
+		if(xmlHttp.readyState == 4){                
+			if(xmlHttp.status == 200){                      
+				parseJson();
+				handlBarChart();
+			}         
+		}
+	}
+	
+	function generateBarChart_down(){
+		if(xmlHttp.readyState == 4){                
+			if(xmlHttp.status == 200){                      
+				parseJson();
+				handlBarChart_down();
+			}         
+		}
+	}
+	
+	function generateTableReport(){
+		if(xmlHttp.readyState == 4){                
+			if(xmlHttp.status == 200){                      
+				parseJson();
+				handleTableReport(document.getElementById("chartContainerUp"));
+			}         
+		}
+	}
+	
+	function generateTableReport_down(){
+		if(xmlHttp.readyState == 4){                
+			if(xmlHttp.status == 200){                      
+				parseJson();
+				handleTableReport(document.getElementById("chartContainerDown"));
+			}         
+		}
+	}
+	
+	function generatePieChart(){
+		if(xmlHttp.readyState == 4){                
+			if(xmlHttp.status == 200){                      
+				parseJson();
+				handlPieChart();
+			}         
+		}
+	}
+	
+	function generatePieChart_down(){
+		if(xmlHttp.readyState == 4){                
+			if(xmlHttp.status == 200){                      
+				parseJson();
+				handlPieChart_down();
+			}         
+		}
+	}
+	
+	
+	function parseJson(){
+		var jsonString = xmlHttp.responseText
+		var objs = eval("["+jsonString+"]");
+		tableName = objs[0].name;
+		headers = objs[0].headers;
+		rows = objs[0].table;
+		/* alert("Table Name : " + tableName + "Headers : " + headers + "Rows : " + rows); */
+	}
+	
+	function generateToolNameSelect(){
+		var ToolNameSelect=document.getElementById('ToolNameSelect');
+		var option = new Option('please select tool name', '')
+		ToolNameSelect.appendChild(option);
+		for(var i = 0 ; i < rows.length; i++){
+			var value = getCellValue(i, "ToolName");
+			var option = new Option(value, value);
+			ToolNameSelect.appendChild(option);
+		}
+	}
+	
+	function generateHeaderSelect(){
+		var HeaderSelect = document.getElementById('HeaderSelect');
+		for(var i = 0 ; i < headers.length; i++){
+			var option = new Option(headers[i].name, headers[i].position);
+			HeaderSelect.appendChild(option);
+		}
+	}
+	
+	function getHeaderPostion(headerName){
+		for(var i = 0; i < headers.length; i++){
+			var obj = headers[i];
+			if(headerName == obj.name){
+				return obj.position;
+			}
+		}
+	}
+	
+	function getCellValue(rowNumber, headerName){
+		var rowObj = rows[rowNumber].row;
+		var index = getHeaderPostion(headerName);
+		var dataObj = rowObj[index].data;
+		return dataObj;
+	}
+	
+	function handlBarChart(){
+		var beginString = "<chart caption='" + getCellValue(0, "ToolName") + " Usage' palette='2' animation='1' subCaption='(Click to slice out or right click to choose rotation mode)' YAxisName='Usage Count' showValues='0' formatNumberScale='0' showPercentInToolTip='0' showLabels='1' showLegend='1'>";
+		var Repairing = getCellValue(0, "Repairing");
+		var Ordered = getCellValue(0, "Ordered");
+		var Renting = getCellValue(0, "Renting");
+		var Onstock = getCellValue(0, "Onstock");
+		var setString = "<set label='Repairing' value='" + Repairing + "' isSliced='0' />"
+		              + "<set label='Ordered' value='" + Ordered + "' isSliced='0' />"
+		              + "<set label='Renting' value='" + Renting + "' isSliced='0' />"
+		              + "<set label='Onstock' value='" + Onstock + "' isSliced='0' />";
+		
+		var endString = "<styles>"
+		+ "<definition>"
+		+ "<style type='font' name='CaptionFont' color='666666' size='15' />"
+		+ "<style type='font' name='SubCaptionFont' bold='0' />"
+		+ "</definition>"
+		+ "<application>"
+		+ "<apply toObject='caption' styles='CaptionFont' />"
+		+ "<apply toObject='SubCaption' styles='SubCaptionFont' />"
+		+ "</application>"
+		+ "</styles>"
+		+ "</chart>";
+		var barString = beginString + setString  + endString;
+		var myChart = new FusionCharts( "../common/charts/Column3D.swf", 
+				"pie", "450", "350", "0", "1" );
+		myChart.setXMLData(barString);
+		myChart.render("chartContainerUp");
+	}
+	
+	function handlBarChart_down(){
+		var HeaderSelect = document.getElementById('HeaderSelect');
+		var headerName = HeaderSelect[HeaderSelect.selectedIndex].text;
+		var headerIndex = HeaderSelect[HeaderSelect.selectedIndex].value;
+		var beginString = "<chart caption='" + headerName + " Usage' palette='2' animation='1' subCaption='(Click to slice out or right click to choose rotation mode)' YAxisName='Usage Count' showValues='0' formatNumberScale='0' showPercentInToolTip='0' showLabels='1' showLegend='1'>";
+		var setString = "";
+		for(var i = 0;i < rows.length; i++){
+			setString = setString + "<set label='"+ getCellValue(i, "ToolName") +"' value='" + getCellValue(i, headerName) + "' isSliced='0' />";
+		}
+		
+		var endString = "<styles>"
+		+ "<definition>"
+		+ "<style type='font' name='CaptionFont' color='666666' size='15' />"
+		+ "<style type='font' name='SubCaptionFont' bold='0' />"
+		+ "</definition>"
+		+ "<application>"
+		+ "<apply toObject='caption' styles='CaptionFont' />"
+		+ "<apply toObject='SubCaption' styles='SubCaptionFont' />"
+		+ "</application>"
+		+ "</styles>"
+		+ "</chart>";
+		var barString = beginString + setString  + endString;
+		var myChart = new FusionCharts( "../common/charts/Column3D.swf", 
+				"pie", "450", "350", "0", "1" );
+		myChart.setXMLData(barString);
+		myChart.render("chartContainerDown");
+	}
+	
+	function handlPieChart(){
+		var beginString = "<chart caption='" + getCellValue(0, "ToolName") + " Count Usage' palette='2' animation='1' subCaption='(Click to slice out or right click to choose rotation mode)' YAxisName='Usage Count' showValues='0' formatNumberScale='0' showPercentInToolTip='0' showLabels='1' showLegend='1'>";
+		var Repairing = getCellValue(0, "Repairing");
+		var Ordered = getCellValue(0, "Ordered");
+		var Renting = getCellValue(0, "Renting");
+		var Onstock = getCellValue(0, "Onstock");
+		var setString = "<set label='Repairing' value='" + Repairing + "' isSliced='0' />"
+		              + "<set label='Ordered' value='" + Ordered + "' isSliced='0' />"
+		              + "<set label='Renting' value='" + Renting + "' isSliced='0' />"
+		              + "<set label='Onstock' value='" + Onstock + "' isSliced='0' />";
+		
+		var endString = "<styles>"
+		+ "<definition>"
+		+ "<style type='font' name='CaptionFont' color='666666' size='15' />"
+		+ "<style type='font' name='SubCaptionFont' bold='0' />"
+		+ "</definition>"
+		+ "<application>"
+		+ "<apply toObject='caption' styles='CaptionFont' />"
+		+ "<apply toObject='SubCaption' styles='SubCaptionFont' />"
+		+ "</application>"
+		+ "</styles>"
+		+ "</chart>";
+		var barString = beginString + setString  + endString;
+		var myChart = new FusionCharts( "../common/charts/Pie3D.swf", 
+				"pie", "450", "350", "0", "1" );
+		myChart.setXMLData(barString);
+		myChart.render("chartContainerUp");
+	}
+	
+	function handlPieChart_down(){
+		var HeaderSelect = document.getElementById('HeaderSelect');
+		var headerName = HeaderSelect[HeaderSelect.selectedIndex].text;
+		var headerIndex = HeaderSelect[HeaderSelect.selectedIndex].value;
+		var beginString = "<chart caption='" + headerName + " Count Usage' palette='2' animation='1' subCaption='(Click to slice out or right click to choose rotation mode)' YAxisName='Usage Count' showValues='0' formatNumberScale='0' showPercentInToolTip='0' showLabels='1' showLegend='1'>";
+		var setString = "";
+		for(var i = 0;i < rows.length; i++){
+			setString = setString + "<set label='"+ getCellValue(i, "ToolName") +"' value='" + getCellValue(i, headerName) + "' isSliced='0' />";
+		}
+		
+		var endString = "<styles>"
+		+ "<definition>"
+		+ "<style type='font' name='CaptionFont' color='666666' size='15' />"
+		+ "<style type='font' name='SubCaptionFont' bold='0' />"
+		+ "</definition>"
+		+ "<application>"
+		+ "<apply toObject='caption' styles='CaptionFont' />"
+		+ "<apply toObject='SubCaption' styles='SubCaptionFont' />"
+		+ "</application>"
+		+ "</styles>"
+		+ "</chart>";
+		var barString = beginString + setString  + endString;
+		var myChart = new FusionCharts( "../common/charts/Pie3D.swf", 
+				"pie", "450", "350", "0", "1" );
+		myChart.setXMLData(barString);
+		myChart.render("chartContainerDown");
+	}
+	
+	function handleTableReport( container){
+		var tbody = document.createElement("table");
+		tbody.setAttribute("class","table_1");
+		var headerTr= document.createElement("tr"); 
+		tbody.appendChild(headerTr);
+		for(var i = 0; i < headers.length; i++){
+			var td = document.createElement("td"); 
+			td.appendChild(document.createTextNode(headers[i].name));
+			headerTr.appendChild(td);
+		}
+	    
+		for(var j = 0; j < rows.length; j++){
+			var rowTr= document.createElement("tr");
+			tbody.appendChild(rowTr);
+			for(var i = 0; i < headers.length; i++){
+				var td = document.createElement("td"); 
+				td.appendChild(document.createTextNode(getCellValue(j, headers[i].name)));
+				rowTr.appendChild(td);
+			}
+		}
+		if(container.firstChild != null){
+			container.removeChild(container.firstChild);
+		}
+		container.appendChild(tbody);
+	}
+</script>
+   <p style="text-align:center; font-weight:bold; font-family:黑体; font-size:medium">Tool Usage Report</p>
+   <table style="text-align:center">
+   <tr><td>
+	<form id="form">
+		ToolName:<select id="ToolNameSelect">
+				 </select>	
+   					
+		Chart Type: <select id="chartType">
+						<option value="">Please choose chart type</option>
+   						<option value="Bar">barChart</option>
+  						<option value="Pie">pieChart</option>
+  						<option value="Table">tableReport</option>
+					</select> 
+		
+		<input id = "showChartButton" type="button" value="submit" onclick="sendRequest();" />
+	</form></td>
+	<td><form id="form_down">
+		Header:<select id="HeaderSelect">
+			   </select>	
+   					
+		Chart Type: <select id="chartType_down">
+						<option value="">Please choose chart type</option>
+   						<option value="Bar">barChart</option>
+  						<option value="Pie">pieChart</option>
+  						<option value="Table">tableReport</option>
+					</select> 
+		
+		<input id = "showChartButtonDown" type="button" value="submit" onclick="sendRequest_down();" />
+	</form></td></tr>
+	<tr><td>
+	<dir id = "chartContainerUp" /></td>
+	<td>
+	<dir id = "chartContainerDown"/></td></tr>
+	</table>
+</body>
+</center>
+</html>

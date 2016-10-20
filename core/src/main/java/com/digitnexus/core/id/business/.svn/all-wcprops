@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/digitnexus/!svn/ver/12445/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/business
+END
+PojoIdGenerateService.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/digitnexus/!svn/ver/12444/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/business/PojoIdGenerateService.java
+END
+PojoIdGenerateServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/digitnexus/!svn/ver/12444/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/business/PojoIdGenerateServiceImpl.java
+END
+EpcGenerateService.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/digitnexus/!svn/ver/12444/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/business/EpcGenerateService.java
+END
+EpcGenerateServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/digitnexus/!svn/ver/12444/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/business/EpcGenerateServiceImpl.java
+END
+AbstractCacheableIdService.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/digitnexus/!svn/ver/12444/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/id/business/AbstractCacheableIdService.java
+END

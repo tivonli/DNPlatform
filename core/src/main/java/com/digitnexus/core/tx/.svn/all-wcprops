@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/tx
+END
+JtaTransactionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/tx/JtaTransactionManager.java
+END
+TransactionSynchronizationRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/tx/TransactionSynchronizationRegistry.java
+END
+TransactionSynchronizationAdaptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/tx/TransactionSynchronizationAdaptor.java
+END
+ThreadLocalQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/tx/ThreadLocalQueue.java
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/digitnexus/!svn/ver/12081/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/json
+END
+DateTypeAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/json/DateTypeAdapter.java
+END
+FlexibleObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/digitnexus/!svn/ver/8640/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/json/FlexibleObject.java
+END
+LocaleTypeAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/json/LocaleTypeAdapter.java
+END
+LongTypeAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/json/LongTypeAdapter.java
+END
+TypeAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/json/TypeAdapter.java
+END
+TimestampTypeAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/json/TimestampTypeAdapter.java
+END
+JsonUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/digitnexus/!svn/ver/12081/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/json/JsonUtil.java
+END
+NumberTypeAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/json/NumberTypeAdapter.java
+END
+PrimitiveLongTypeAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/json/PrimitiveLongTypeAdapter.java
+END
+NumberClassProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/digitnexus/!svn/ver/8288/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/json/NumberClassProcessor.java
+END

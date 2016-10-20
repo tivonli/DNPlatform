@@ -1,0 +1,114 @@
+<mxEditor defaultGroup="group" defaultEdge="edge"
+	helpWindowImage="images/help.gif"
+	tasksWindowImage="images/tasks.gif"
+	forcedInserting="0"
+	swimlaneRequired="0">
+	<include name="config/editor-commons.xml"/>
+	<add as="onInit">
+		function ()
+		{
+			//this.showTasks();
+			//this.dblClickAction = 'showProperties';
+			this.showProperties(null);
+		}
+	</add>
+	<Array as="cycleAttributeValues">
+		<add value="#83027F"/>
+		<add value="#66B922"/>
+		<add value="#808913"/>
+		<add value="#CF0056"/>
+		<add value="#4679B6"/>
+	</Array>
+	<Array as="templates">
+		<add as="group">
+			<Group label="" description="" href="">
+				<mxCell vertex="1" style="group" connectable="0"/>
+			</Group>
+		</add>
+		<add as="edge">
+			<Edge edgeId="" name="edge" from="" to="" attribute="">
+				<mxCell edge="1">
+					<mxGeometry as="geometry" relative="1"/>
+				</mxCell>
+			</Edge>
+		</add>
+		<add as="swimlane">
+			<Swimlane label="Swimlane" description="" href="">
+				<mxCell vertex="1" style="swimlane" connectable="0">
+					<mxGeometry as="geometry" width="300" height="160"/>
+				</mxCell>
+			</Swimlane>
+		</add>
+		<add as="task">
+			<Task label="Task" description="" href="">
+				<mxCell vertex="1">	
+					<mxGeometry as="geometry" width="72" height="32"/>
+				</mxCell>
+			</Task>
+		</add>
+		<add as="subprocess">
+			<Subprocess label="Subprocess" description="" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="72" height="32"/>
+				</mxCell>
+			</Subprocess>
+		</add>
+		<add as="shape">
+			<Shape label="" description="" href="">
+				<mxCell vertex="1" style="ellipse">		
+					<mxGeometry as="geometry" width="32" height="32"/>
+				</mxCell>
+			</Shape>
+		</add>
+		<add as="symbol">
+			<Symbol label="Symbol" description="" href="">
+				<mxCell vertex="1" style="symbol;image=images/symbols/event.png">		
+					<mxGeometry as="geometry" width="32" height="32"/>
+				</mxCell>
+			</Symbol>
+		</add>
+		<add as="dataBase">
+			<DataBase nodeId="" type="DataNode" name="dataBase" driver="" url="" userName="" password="">
+				<mxCell vertex="1">		
+					<mxGeometry as="geometry" width="85" height="60"/>
+				</mxCell>
+			</DataBase>
+		</add>
+		<add as="dataNode">
+			<DataNode nodeId="" type="DataNode" name="dataNode" >
+				<mxCell vertex="1">		
+					<mxGeometry as="geometry" width="85" height="60"/>
+				</mxCell>
+			</DataNode>
+		</add>
+		<add as="jdbcOperator">
+			<JdbcOperator nodeId="" type="OperatorNode" name="jdbcOperator" sql="" header="" >
+				<mxCell vertex="1">		
+					<mxGeometry as="geometry" width="85" height="60"/>
+				</mxCell>
+			</JdbcOperator>
+		</add>
+		<add as="jsonOperator">
+			<JsonOperator nodeId="" type="OperatorNode" name="jsonOperator" >
+				<mxCell vertex="1">		
+					<mxGeometry as="geometry" width="85" height="60"/>
+				</mxCell>
+			</JsonOperator>
+		</add>
+		<add as="joinOperator">
+			<JoinOperator nodeId="" type="OperatorNode" name="joinOperator" joinType="" joinHeader="">
+				<mxCell vertex="1">		
+					<mxGeometry as="geometry" width="85" height="60"/>
+				</mxCell>
+			</JoinOperator>
+		</add>
+		<add as="fusionChartOperator">
+			<FusionChartOperator nodeId="" type="OperatorNode" name="fusionChartOperator" caption="" subCaption="" xAxisname="" yAxisname="" chartType="">
+				<mxCell vertex="1">		
+					<mxGeometry as="geometry" width="85" height="60"/>
+				</mxCell>
+			</FusionChartOperator>
+		</add>
+	</Array>
+</mxEditor>
+

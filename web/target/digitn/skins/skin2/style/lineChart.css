@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+body {
+  font: 10px sans-serif;
+}
+
+.rule line {
+  stroke: #eee;
+  shape-rendering: crispEdges;
+}
+
+.rule line.axis {
+  stroke: #000;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+circle.line {
+  fill: #fff;
+}
+svg {
+  width: 960px;
+  height: 500px;
+  font: 10px sans-serif;
+}
+
+.rule {
+  shape-rendering: crispEdges;
+}
+
+path.line {
+  fill: none;
+}

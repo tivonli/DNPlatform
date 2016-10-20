@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/digitnexus/!svn/ver/10208/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/nosql/spring/config
+END
+MongodbNamespaceHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/digitnexus/!svn/ver/7342/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/nosql/spring/config/MongodbNamespaceHandler.java
+END
+MongoMappingContextFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/digitnexus/!svn/ver/10208/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/nosql/spring/config/MongoMappingContextFactory.java
+END
+DefaultBeforeSaveEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/digitnexus/!svn/ver/10208/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/nosql/spring/config/DefaultBeforeSaveEvent.java
+END
+MappingContextParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/digitnexus/!svn/ver/7342/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/nosql/spring/config/MappingContextParser.java
+END

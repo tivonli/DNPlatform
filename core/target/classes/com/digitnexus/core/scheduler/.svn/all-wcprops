@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/digitnexus/!svn/ver/12183/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/scheduler
+END
+SchedulerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/scheduler/SchedulerService.java
+END
+SchedulerServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/digitnexus/!svn/ver/12183/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/scheduler/SchedulerServiceImpl.java
+END
+TransactionalJobBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/digitnexus/!svn/ver/12183/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/scheduler/TransactionalJobBean.java
+END
+JobSchedule.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/digitnexus/!svn/ver/12183/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/scheduler/JobSchedule.java
+END
+MessageSchedulerBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/scheduler/MessageSchedulerBean.java
+END

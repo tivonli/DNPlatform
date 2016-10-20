@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+.userprofileview{
+	width:100%;
+	height:100%;
+}
+.userprofileleftview{
+	float:left;
+	width:48%;
+	height:99%;
+	padding: 5px 5px 0 5px;
+}
+.userprofilerightview{
+	float:right;
+	width:48%;
+	height:99%;
+	padding: 5px 5px 0 5px;
+}
+.userprofileItem{
+	width:100%;
+	/*border:1px solid #BBBBBB;*/
+	padding: 2px 2px 2px 2px;
+	margin: 8px 0 8px 0;
+	height:auto!important;
+}
+.userprofileItemHeader{
+	width:100%;
+	background:url(../images/common/profile/header_bg.png) repeat-x scroll left center transparent;
+	margin: 0;
+    padding: 0;
+}
+.userprofileItemHeader > h3{
+	background-color: #FFFFFF;
+    display: inline;
+    margin: 0;
+    padding: 0 8px 0 0;
+}
+
+.userprofileItemHeader .edit{
+	background-color: #FFFFFF;
+    float: right;
+    margin: 3px 0 0;
+    padding: 0 0 0 8px;
+}
+
+.userprofileItemHeader .icon{
+	background: url("../images/common/profile/icons_module.png") no-repeat scroll 5px -703px transparent;
+    padding: 0 10px;
+}
+
+.userprofileItemBody{
+	width:97%;
+	height:auto!important;
+	padding: 5px 0 0 0;
+	overflow-x : hidden;
+}

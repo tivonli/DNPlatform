@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/digitnexus/!svn/ver/12065/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/dao
+END
+ListViewNosqlDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/digitnexus/!svn/ver/10208/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/dao/ListViewNosqlDao.java
+END
+ListViewNosqlDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/digitnexus/!svn/ver/12065/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/dao/ListViewNosqlDaoImpl.java
+END
+ListViewDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/digitnexus/!svn/ver/8942/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/dao/ListViewDao.java
+END
+ListViewDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/digitnexus/!svn/ver/8942/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/dao/ListViewDaoImpl.java
+END

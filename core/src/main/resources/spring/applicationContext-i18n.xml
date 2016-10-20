@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="
+     http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+    <!--
+    This bean could be completely configured through annotations but configured here so that
+     developers are aware of which bean is responsible for loading resource bundles.A new resource bundle can be added to 
+    'resources/properties/i18n' with naming pattern 'resourceBundle*.properties'. There should be at least one file 
+    with naming pattern 'resourceBundle*_en.properties'. This class will automatically pick up those files 
+    -->
+	<bean id="messageSource" class="com.digitnexus.core.i18n.spring.CustomMessageSource">
+	  <property name="supportedLocales">
+		  <set>
+		      <value>en</value>
+		      <value>en_US</value>
+		      <value>zh_CN</value>
+		  </set>
+	  </property>
+	</bean>
+
+</beans>     

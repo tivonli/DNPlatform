@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/digitnexus/!svn/ver/10908/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/dataobjects
+END
+Asset.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/digitnexus/!svn/ver/10908/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/dataobjects/Asset.java
+END
+GenericArticle.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/digitnexus/!svn/ver/10596/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/dataobjects/GenericArticle.java
+END
+Product.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/digitnexus/!svn/ver/10908/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/dataobjects/Product.java
+END
+Uom.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/digitnexus/!svn/ver/10908/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/dataobjects/Uom.java
+END
+LocationId.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/digitnexus/!svn/ver/9836/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/dataobjects/LocationId.java
+END
+AssetLocation.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/digitnexus/!svn/ver/10634/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/dataobjects/AssetLocation.java
+END
+Location.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/digitnexus/!svn/ver/9836/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/dataobjects/Location.java
+END
+ProductMaster.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/digitnexus/!svn/ver/10908/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/dataobjects/ProductMaster.java
+END
+Category.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/digitnexus/!svn/ver/10908/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/dataobjects/Category.java
+END

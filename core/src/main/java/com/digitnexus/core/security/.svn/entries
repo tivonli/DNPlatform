@@ -1,0 +1,49 @@
+10
+
+dir
+12449
+http://192.168.10.18/svn/digitnexus/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/security
+http://192.168.10.18/svn/digitnexus
+
+
+
+2013-01-30T18:55:40.489567Z
+12213
+Santanu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e3dc6389-dc77-5747-9274-c5dc9cddce6e
+
+aop
+dir
+
+service
+dir
+
+spring
+dir
+
+dao
+dir
+
+servlet
+dir
+
+annotation
+dir
+
+util
+dir
+

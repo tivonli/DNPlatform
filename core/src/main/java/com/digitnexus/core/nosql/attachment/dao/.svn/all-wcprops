@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/digitnexus/!svn/ver/10534/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/nosql/attachment/dao
+END
+AttachmentStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/digitnexus/!svn/ver/10534/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/nosql/attachment/dao/AttachmentStream.java
+END
+AttachmentDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/digitnexus/!svn/ver/10534/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/nosql/attachment/dao/AttachmentDao.java
+END
+AttachmentDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/digitnexus/!svn/ver/10534/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/nosql/attachment/dao/AttachmentDaoImpl.java
+END

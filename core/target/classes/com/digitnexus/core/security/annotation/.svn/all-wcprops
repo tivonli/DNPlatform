@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/security/annotation
+END
+CreateEditEntityPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/security/annotation/CreateEditEntityPermission.java
+END
+SecuredResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/security/annotation/SecuredResource.java
+END
+ReadPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/security/annotation/ReadPermission.java
+END
+DeletePermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/security/annotation/DeletePermission.java
+END
+CreatePermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/security/annotation/CreatePermission.java
+END
+EditPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/security/annotation/EditPermission.java
+END

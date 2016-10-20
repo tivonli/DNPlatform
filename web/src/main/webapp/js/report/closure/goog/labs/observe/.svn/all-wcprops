@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/digitnexus/!svn/ver/10906/m200/trunk/DNPlatform/web/src/main/webapp/js/report/closure/goog/labs/observe
+END
+observable.js
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/digitnexus/!svn/ver/10906/m200/trunk/DNPlatform/web/src/main/webapp/js/report/closure/goog/labs/observe/observable.js
+END
+simpleobservable_test.html
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/digitnexus/!svn/ver/10906/m200/trunk/DNPlatform/web/src/main/webapp/js/report/closure/goog/labs/observe/simpleobservable_test.html
+END
+observableset_test.html
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/digitnexus/!svn/ver/10906/m200/trunk/DNPlatform/web/src/main/webapp/js/report/closure/goog/labs/observe/observableset_test.html
+END
+observationset.js
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/digitnexus/!svn/ver/10906/m200/trunk/DNPlatform/web/src/main/webapp/js/report/closure/goog/labs/observe/observationset.js
+END
+observer.js
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/digitnexus/!svn/ver/10906/m200/trunk/DNPlatform/web/src/main/webapp/js/report/closure/goog/labs/observe/observer.js
+END
+observationset_test.html
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/digitnexus/!svn/ver/10906/m200/trunk/DNPlatform/web/src/main/webapp/js/report/closure/goog/labs/observe/observationset_test.html
+END
+observer_test.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/digitnexus/!svn/ver/10906/m200/trunk/DNPlatform/web/src/main/webapp/js/report/closure/goog/labs/observe/observer_test.html
+END
+simpleobservable.js
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/digitnexus/!svn/ver/10906/m200/trunk/DNPlatform/web/src/main/webapp/js/report/closure/goog/labs/observe/simpleobservable.js
+END
+observableset.js
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/digitnexus/!svn/ver/10906/m200/trunk/DNPlatform/web/src/main/webapp/js/report/closure/goog/labs/observe/observableset.js
+END
+notice.js
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/digitnexus/!svn/ver/10906/m200/trunk/DNPlatform/web/src/main/webapp/js/report/closure/goog/labs/observe/notice.js
+END

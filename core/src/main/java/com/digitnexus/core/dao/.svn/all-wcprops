@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/digitnexus/!svn/ver/10908/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/dao
+END
+BaseDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/digitnexus/!svn/ver/10908/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/dao/BaseDaoImpl.java
+END
+AbstractQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/dao/AbstractQuery.java
+END
+BaseDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/digitnexus/!svn/ver/10596/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/dao/BaseDao.java
+END

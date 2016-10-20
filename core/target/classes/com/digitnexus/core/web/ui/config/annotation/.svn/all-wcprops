@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/digitnexus/!svn/ver/12073/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation
+END
+FieldGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/digitnexus/!svn/ver/12073/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation/FieldGroup.java
+END
+Uom.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/digitnexus/!svn/ver/9706/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation/Uom.java
+END
+FlexField.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/digitnexus/!svn/ver/6810/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation/FlexField.java
+END
+FieldGroupType.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/digitnexus/!svn/ver/12073/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation/FieldGroupType.java
+END
+OrderBy.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/digitnexus/!svn/ver/6558/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation/OrderBy.java
+END
+DisplayType.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/digitnexus/!svn/ver/11031/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation/DisplayType.java
+END
+Alphanumeric.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/digitnexus/!svn/ver/10855/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation/Alphanumeric.java
+END
+View.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/digitnexus/!svn/ver/8497/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation/View.java
+END
+DataType.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/digitnexus/!svn/ver/8399/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation/DataType.java
+END
+SearchOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/digitnexus/!svn/ver/7364/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation/SearchOperator.java
+END
+SearchColumn.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/digitnexus/!svn/ver/11757/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation/SearchColumn.java
+END
+EditViewField.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/digitnexus/!svn/ver/11716/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation/EditViewField.java
+END
+ListViewColumn.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/digitnexus/!svn/ver/8005/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation/ListViewColumn.java
+END
+FlexFieldDescriminator.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/digitnexus/!svn/ver/6810/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation/FlexFieldDescriminator.java
+END
+Compare.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/digitnexus/!svn/ver/8426/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation/Compare.java
+END
+Attachment.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/digitnexus/!svn/ver/9572/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation/Attachment.java
+END
+FlexFieldConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/digitnexus/!svn/ver/6810/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation/FlexFieldConfig.java
+END
+CompareType.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/digitnexus/!svn/ver/9034/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation/CompareType.java
+END
+AttachmentType.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/digitnexus/!svn/ver/8161/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/web/ui/config/annotation/AttachmentType.java
+END

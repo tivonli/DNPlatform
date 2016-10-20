@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/digitnexus/!svn/ver/11988/m200/trunk/DNPlatform/core/src/test/resources/spring/test
+END
+applicationContext-tx.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/digitnexus/!svn/ver/9836/m200/trunk/DNPlatform/core/src/test/resources/spring/test/applicationContext-tx.xml
+END
+applicationContext-hibernate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/digitnexus/!svn/ver/11988/m200/trunk/DNPlatform/core/src/test/resources/spring/test/applicationContext-hibernate.xml
+END
+applicationContext-test-common.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/digitnexus/!svn/ver/10484/m200/trunk/DNPlatform/core/src/test/resources/spring/test/applicationContext-test-common.xml
+END
+applicationContext-email.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/digitnexus/!svn/ver/10688/m200/trunk/DNPlatform/core/src/test/resources/spring/test/applicationContext-email.xml
+END

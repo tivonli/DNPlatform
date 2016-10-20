@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/config
+END
+workfloweditor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/config/workfloweditor.xml
+END
+mashup-editor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/config/mashup-editor.xml
+END
+layouteditor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/config/layouteditor.xml
+END
+processeditor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/config/processeditor.xml
+END
+wfeditor-commons.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/config/wfeditor-commons.xml
+END
+mashup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/config/mashup.xml
+END
+mashup-toolbar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/config/mashup-toolbar.xml
+END
+mashup-menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/config/mashup-menu.xml
+END
+keyhandler-commons.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/config/keyhandler-commons.xml
+END
+editor-commons.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/config/editor-commons.xml
+END
+mashupeditor-graph.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/config/mashupeditor-graph.xml
+END
+wfgraph-commons.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/config/wfgraph-commons.xml
+END
+wftoolbar-commons.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/config/wftoolbar-commons.xml
+END
+keyhandler-minimal.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/config/keyhandler-minimal.xml
+END
+diagrameditor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/digitnexus/!svn/ver/5206/m200/trunk/DNPlatform/web/src/main/webapp/page/editor/config/diagrameditor.xml
+END

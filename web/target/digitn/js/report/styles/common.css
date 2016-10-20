@@ -1,0 +1,145 @@
+
+    .reportWindow {
+      left: 150px;
+      top: 110px;
+      width: 430px;
+      height: 350px;
+      background-color: rgb(200,200,250);
+      border: 1px solid #99F;
+      font: bold 11px/18px arial;
+      text-indent: 10px;
+      color: #FFF;
+      overflow: hidden;
+    }
+
+    .reportTitle {
+      background-color: #99F;
+      cursor: default;
+      height: 20px;
+      vertical-align: middle;
+      text-align: center;
+    }
+    
+    .reportMenu {
+      background-color: #99ccff;
+      cursor: pointer;
+      height: 25px;
+    }
+    
+    .reportBody {
+      background-color: #FFF;
+      cursor: default;
+      overflow-y: auto;
+      overflow-x: auto;
+    }
+    
+    
+    #reportContainerId_{
+        width: 69%;
+        height: 100%;
+        border: 1px solid #888;
+        float: right;
+    }
+    
+    #groupContainerId_{
+        width: 15%;
+        height: 100%;
+        border: 1px solid #888;
+         border-right: none;
+        float:left;
+    }
+    
+    #listContainerId_{
+        width: 15%;
+        height: 100%;
+        border: 1px solid #888;
+        border-right: none;
+        float:left;
+    }
+    
+    #treeReportList_{
+        width: 25%;
+        height: 100%;
+        border: 1px solid #888;
+        float:left;
+        border-right: none;
+        overflow: auto;
+    }
+    
+    #treeReportContainer_{
+        width: 74%;
+        height: 100%;
+        border: 1px solid #888;
+        float:right;
+    }
+    
+    #reportPage_{
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
+    .table_1{
+		border-collapse:collapse;
+		table-layout:fixed;
+		line-height:18px;
+	}
+	.table_1 td, .table_1 th{
+		padding:2px 5px;
+		border:1px solid #E5E5E5;
+	}
+	.table_1 th{
+		color:#666666;
+		font-weight:normal;
+		text-align:center;
+		background:url(../images/common/table/table1_th.gif) center repeat-x;
+	}
+	.table_1 .th2 th{
+		background:#EDFCF2;
+	}
+	.table_1 .bgcolor1 {
+		background:#F5F8FA;
+	}
+	.table_1 .selected{
+		background:url(../images/common/table1_selected.gif) repeat-x;
+		color:#0000B3;
+	}
+        
+        .menuList,.menuItemGroup{
+            font: bold medium sans-serif;
+            position:relative;
+            background-color: lightgray;
+            padding-left: 3px;
+            margin: 0px;
+        }
+        .menuActivator{
+            
+        }
+        .menuListItem, .menuActivator {
+            padding-left: 3px;
+            list-style-position:inside;
+            list-style-type: none;
+        }
+        
+        .menuList, .menuListItem,.menuActivator{
+            padding: 3px;
+            margin: 0x;
+        }
+        .menuList {
+              border: none;
+        }
+        .menuListItem:hover,.menuActivator:hover {
+            background-color: #99ccff;
+            cursor:pointer;
+        }
+        .menuSeperator{
+            width: 100%;
+            height: 2px;
+        }
+        .menuItemGroup{
+            border-left: 1px solid #888;
+        }
+        .mainMenu{
+            position:relative;left:0px;top:0px;
+            font: bold medium sans-serif;
+        }
+        

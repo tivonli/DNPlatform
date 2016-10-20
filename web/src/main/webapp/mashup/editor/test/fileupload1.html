@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test page 01</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+     <script type="text/javascript" src="../js/jquery.js"></script>
+     <script type="text/javascript" src="../js/bBank_4.5r.js"></script>
+     
+   <script type="text/javascript">
+      var checkSubmit = function(form){
+          //var f = form.cloneNode(true);
+         b$.asyn.formSubmit(form, '/SCMVisibility/rest/mashupeditor/upload',  function(d){
+　　　        alert(d);
+         }); 
+         return false;
+      }
+     
+   </script>
+
+</head>
+
+<body >
+    <form id="fileupload" action="#" method="post" enctype="multipart/form-data"
+          target="hiddenIframe" onsubmit="return checkSubmit(this)">
+        <input id="file1" type="file" name="file1" /><br/>
+        <input type="submit" value="upload"/>
+    </form>
+    
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/digitnexus/!svn/ver/10534/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/nosql/domain
+END
+AttachmentObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/digitnexus/!svn/ver/10534/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/nosql/domain/AttachmentObject.java
+END
+FileStoreArticle.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/digitnexus/!svn/ver/10208/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/nosql/domain/FileStoreArticle.java
+END
+FSFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/digitnexus/!svn/ver/10208/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/nosql/domain/FSFile.java
+END

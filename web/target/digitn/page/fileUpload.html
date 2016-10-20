@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-1.6.js"></script>
+<script type="text/javascript">
+
+
+
+$(document).ready(function(){    	
+	//this is just for test
+	createUploader("http://localhost:8081/autoid/servlet/Upload");
+}); 
+
+function createUploader(url){
+	var iframe = "<iframe style='display:none' id='uploadFrame_file' name='uploadFrame_file'></iframe>";
+	var form = "<form name='fileForm' id='fileForm' method='post' enctype='multipart/form-data' action='"+url+"' target='uploadFrame_file'></form>";
+	
+	var input = "<input size='40' type='file' name='fileUp' contentEditable='false'/>";
+	var submit = "<input type='button' value='upload' onclick='uploadFile(this)'>";
+	var info = "<div id='file_info'></div>";
+	$('#fileUpload').append(iframe).append(form);
+	$('#fileForm').append(input).append(submit).append(info);
+}
+
+
+function uploadFile(obj){
+	$('#file_info').html("<img src='../images/common/upload/loading.gif'/>uploading...");
+	$('#fileForm').submit();
+}
+
+function uploadCallback(msg){
+	var status = $(msg)[0].success;
+	if(status == true){
+		$('#file_info').html("success");
+	}else{
+		var reason = $(msg)[0].reason;
+		$('#file_info').html("fail:"+reason);
+	}
+}
+
+</script>
+
+</head>
+<body>
+
+<div id="fileUpload"></div>
+
+</body>
+</html>

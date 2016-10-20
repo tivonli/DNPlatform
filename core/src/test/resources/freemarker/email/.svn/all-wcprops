@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/digitnexus/!svn/ver/9836/m200/trunk/DNPlatform/core/src/test/resources/freemarker/email
+END
+password_send_test_zh_CN.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/digitnexus/!svn/ver/9836/m200/trunk/DNPlatform/core/src/test/resources/freemarker/email/password_send_test_zh_CN.ftl
+END
+password_send_test.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/digitnexus/!svn/ver/9836/m200/trunk/DNPlatform/core/src/test/resources/freemarker/email/password_send_test.ftl
+END

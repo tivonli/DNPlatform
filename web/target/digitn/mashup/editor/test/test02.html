@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test page 01</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+     <script type="text/javascript">
+       mxBasePath = '../../lib';
+    </script>
+    <script type="text/javascript" src="../../lib/js/mxClient.js"></script>
+     
+   
+ 
+   <script type="text/javascript"> 
+            mxLog.show();
+            for (var i in mxCellRenderer.prototype.defaultShapes)
+            {
+                mxLog.debug(i);
+                console.log(i);
+            }
+           // window.onload=runTest;
+   </script>
+   
+    <script type="text/javascript" src="../src/js/mashup/utils.js"></script>
+
+	<!-- Example code -->
+	<script type="text/javascript">
+		// Program starts here. Creates a sample graph in the
+		// DOM node with the specified ID. This function is invoked
+		// from the onLoad event handler of the document (see below).
+		function main(container)
+		{
+			// Checks if the browser is supported
+			if (!mxClient.isBrowserSupported())
+			{
+				// Displays an error message if the browser is not supported.
+				mxUtils.error('Browser is not supported!', 200, false);
+			}
+			else
+			{
+				// Enables crisp rendering of rectangles in SVG
+				mxRectangleShape.prototype.crisp = true;
+				
+				// Creates the graph inside the given container
+				var graph = new mxGraph(container);
+
+				// Uncomment the following if you want the container
+				// to fit the size of the graph
+				graph.setResizeContainer(true);
+				
+				// Enables rubberband selection
+				new mxRubberband(graph);
+				
+				// Gets the default parent for inserting new cells. This
+				// is normally the first child of the root (ie. layer 0).
+				var parent = graph.getDefaultParent();
+								
+				// Adds cells to the model in a single step
+				graph.getModel().beginUpdate();
+				try
+				{
+					var v1 = graph.insertVertex(parent, null, new BussinessObject(), 20, 20, 80, 30);
+					var v2 = graph.insertVertex(parent, null, 'World!', 200, 150, 80, 30);
+					var e1 = graph.insertEdge(parent, null, '', v1, v2);
+				}
+				finally
+				{
+					// Updates the display
+					graph.getModel().endUpdate();
+				}
+			}
+		};
+	</script>
+  
+</head>
+<body >
+    
+</body>
+</html>

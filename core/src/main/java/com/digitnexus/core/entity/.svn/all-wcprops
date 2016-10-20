@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/digitnexus/!svn/ver/12065/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/entity
+END
+EntityServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/digitnexus/!svn/ver/12065/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/entity/EntityServiceImpl.java
+END
+SaveEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/entity/SaveEvent.java
+END
+DeleteEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/entity/DeleteEvent.java
+END
+EntityConfigurationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/digitnexus/!svn/ver/12063/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/entity/EntityConfigurationService.java
+END
+EntityValidationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/entity/EntityValidationException.java
+END
+PostSaveEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/entity/PostSaveEvent.java
+END
+PreSaveEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/entity/PreSaveEvent.java
+END
+ValidateEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/entity/ValidateEvent.java
+END
+EntityService.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/digitnexus/!svn/ver/7369/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/entity/EntityService.java
+END
+EntityEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/entity/EntityEvent.java
+END

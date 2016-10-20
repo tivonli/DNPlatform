@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test page 01</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+     <script type="text/javascript" src="../js/asyncuploadfile.js"></script>
+     
+   <script type="text/javascript">
+      var checkSubmit = function(form){
+         dititnexus.asynformupload.formSubmit(form.childNodes, '/SCMVisibility/rest/mashupeditor/upload',  function(d){
+　　　        alert(d);
+         }); 
+         return false;
+      }
+     
+     var uploadFiles = function(){
+         var inputs = [document.getElementById('file1')];
+         dititnexus.asynformupload.formSubmit(inputs, '/SCMVisibility/rest/mashupeditor/upload',  function(d){
+　　　        alert('success' + d);
+         }); 
+         return false;
+      }
+      
+   </script>
+
+</head>
+
+<body >
+    
+      <input id="file1" type="file" name="file1" /><br/>
+      <input type="button" value="upload" onclick="uploadFiles()" />
+      
+    <!--
+     <form id="fileupload" action="#" method="post" enctype="multipart/form-data"
+          target="hiddenIframe" onsubmit="return checkSubmit(this)">
+        <input id="file1" type="file" name="file1" /><br/>
+        <input type="submit" value="upload"/>
+    </form>
+    -->
+   
+    
+</body>
+
+</html>

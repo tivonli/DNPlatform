@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/digitnexus/!svn/ver/11116/m200/trunk/DNPlatform/core/src/main/resources/spring/run
+END
+applicationContext-tx.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/resources/spring/run/applicationContext-tx.xml
+END
+applicationContext-hibernate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/digitnexus/!svn/ver/11116/m200/trunk/DNPlatform/core/src/main/resources/spring/run/applicationContext-hibernate.xml
+END
+applicationContext-email.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/digitnexus/!svn/ver/10688/m200/trunk/DNPlatform/core/src/main/resources/spring/run/applicationContext-email.xml
+END

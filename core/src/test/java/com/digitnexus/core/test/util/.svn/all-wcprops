@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/digitnexus/!svn/ver/12158/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/util
+END
+JaxbUtilTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/digitnexus/!svn/ver/11166/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/util/JaxbUtilTest.java
+END
+GzipUtilTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/digitnexus/!svn/ver/11797/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/util/GzipUtilTest.java
+END
+TransformUtilTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/digitnexus/!svn/ver/12158/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/util/TransformUtilTest.java
+END
+JaxbTestBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/digitnexus/!svn/ver/11166/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/util/JaxbTestBean.java
+END
+JibxUtilsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/digitnexus/!svn/ver/10595/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/test/util/JibxUtilsTest.java
+END

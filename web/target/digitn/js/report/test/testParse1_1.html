@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Insert title here</title>
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="Mashup.js"></script>
+	<script type="text/javascript" src="MashupCacheManager.js"></script>
+	<script type="text/javascript" src="MashupManager.js"></script>
+	<script type="text/javascript" src="MashupParser.js"></script>
+	<script type="text/javascript" src="MashupRequest.js"></script>
+	<script type="text/javascript" src="MashupRunner.js"></script>
+	<script type="text/javascript" src="NetworkManager.js"></script>
+	<script type="text/javascript" src="RequestBuilder.js"></script>
+	<script type="text/javascript" src="OperatorManager.js"></script>
+	<script type="text/javascript" src="ResultCacheManager.js"></script>
+	<script type="text/javascript" src="Utils.js"></script>
+	<script type="text/javascript" src="TestOperators.js"></script>
+
+</head>
+<body>
+        digitnexus.re.context = digitnexus.utils.getWebContextPath();
+	<script type="text/javascript">
+    	$(document).ready(function() {
+    	 //register operator instance
+		 operatorManager.registerOperator(new DrawOperator());
+		 operatorManager.registerOperator(new ConditionOperator());
+		}); 
+	function executeMashup() {
+		//request and run the test mash-up
+		networkManager.requestMashupAndRun("/SCMVisibility/rest/mashup_a/data/309",null);
+	}
+ </script>
+ 
+ <input type="button" value="Test Mashup" onclick="executeMashup();" ></button>
+   <div id="mashupContent"></div>
+   <div id="executeResult"></div>
+</body>
+</html>

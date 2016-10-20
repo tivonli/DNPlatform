@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/editor/stencils/aws
+END
+database.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/editor/stencils/aws/database.xml
+END
+storage.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/editor/stencils/aws/storage.xml
+END
+on_demand_workforce.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/editor/stencils/aws/on_demand_workforce.xml
+END
+networking.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/editor/stencils/aws/networking.xml
+END
+misc.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/editor/stencils/aws/misc.xml
+END
+compute.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/editor/stencils/aws/compute.xml
+END
+deployment_management.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/editor/stencils/aws/deployment_management.xml
+END
+content_delivery.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/editor/stencils/aws/content_delivery.xml
+END
+messaging.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/editor/stencils/aws/messaging.xml
+END
+groups.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/editor/stencils/aws/groups.xml
+END
+non_service_specific.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/digitnexus/!svn/ver/9116/m200/trunk/DNPlatform/web/src/main/webapp/mashup/editor/stencils/aws/non_service_specific.xml
+END

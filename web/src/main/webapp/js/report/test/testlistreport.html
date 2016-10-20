@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>test new reporting engine</title>
+       
+
+       
+        <link rel="stylesheet" type="text/css" href="../../report/styles/common.css">
+    <link rel="stylesheet" type="text/css"  href="../../report/closure/goog/css/menu.css">
+    <link rel="stylesheet" type="text/css"  href="../../report/closure/goog/css/menuitem.css">
+    <link rel="stylesheet" type="text/css"  href="../../report/closure/goog/css/menuseparator.css">
+    <link rel="stylesheet" type="text/css"  href="../../report/closure/goog/css/filteredmenu.css">
+    <link rel="stylesheet" type="text/css"  href="../../report/closure/goog/css/filterobservingmenuitem.css">
+    <link rel="stylesheet" type="text/css"  href="../../report/closure/goog/css/tristatemenuitem.css">
+    
+	<script type="text/javascript" src="../../jquery-1.7.1.js"></script>
+         <script type="text/javascript" src="../../report/closure/goog/base.js"></script>
+        <!--   <script type="text/javascript" src="../../js/jquery-1.7.1.js"></script> -->
+        <script type="text/javascript" src="../../report/mashuputils.js"></script>
+         <script type="text/javascript" src="../../report/bodata.js"></script>
+        <script type="text/javascript" src="../../report/reportingengine.js"></script> 
+        <script type="text/javascript" src="../../report/drawoperator.js"></script>
+        <script type="text/javascript" src="../../report/filteroperator.js"></script>
+        
+         <script type="text/javascript" src="../../report/rgraph/RGraph.common.core.js"></script>
+        <script type="text/javascript" src="../../report/rgraph/RGraph.common.tooltips.js"></script>
+        <script type="text/javascript" src="../../report/rgraph/RGraph.common.effects.js"></script>
+	<script type="text/javascript" src="../../report/rgraph/RGraph.common.dynamic.js"></script>
+	<script type="text/javascript" src="../../report/rgraph/RGraph.common.key.js"></script>
+        <script type="text/javascript" src="../../report/rgraph/RGraph.bar.js"></script>
+        <script type="text/javascript" src="../../report/rgraph/RGraph.line.js" ></script>
+        <script type="text/javascript" src="../../report/rgraph/RGraph.pie.js" ></script>
+        <script type="text/javascript" src="../../report/rgraph/RGraph.meter.js" ></script>
+        <script type="text/javascript" src="../../report/rgraph/RGraph.common.tooltips.js" ></script>
+        <script type="text/javascript"  src="../../report/rgraph/RGraph.funnel.js" ></script>
+        <script type="text/javascript"  src="../../report/rgraph/RGraph.common.context.js" ></script>
+        <script type="text/javascript"  src="../../report/rgraph/RGraph.hbar.js" ></script>
+        <script  type="text/javascript"  src="../../report/rgraph/RGraph.hprogress.js"></script>
+        <script   type="text/javascript"  src="../../report/rgraph/RGraph.radar.js" ></script>
+        <script   type="text/javascript"  src="../../report/rgraph/RGraph.rose.js" ></script>
+         <script   type="text/javascript"  src="../../report/rgraph/RGraph.rscatter.js" ></script>
+        
+	<script type="text/javascript">
+	var context = digitnexus.re.context = "/SCMVisibility";
+	
+	$(document).ready(function() {
+            var container = document.getElementById('reportContainerId');
+            container.style.position='absolute';
+            container.style.left = ((document.body.offsetWidth - container.offsetWidth)/2) +'px';
+            //container.style.top = ((document.body.offsetHeight - container.offsetHeight)/2) +'px';
+            digitnexus.re.reportManager.createListNavReport('browser',document.getElementById('reportContainerId'));
+        });
+	
+ </script>
+</head>
+
+<body>
+
+    <div id="reportContainerId" style="margin-top:100px ;width:800px;height:400px;border: 1px solid #0077FF">
+         
+     </div>
+
+</body>
+</html>

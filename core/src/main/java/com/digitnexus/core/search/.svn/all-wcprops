@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/digitnexus/!svn/ver/10514/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/search
+END
+SearchCriteriaConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/digitnexus/!svn/ver/6415/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/search/SearchCriteriaConfiguration.java
+END
+SearchCriteriaConfigurationLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/digitnexus/!svn/ver/8452/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/search/SearchCriteriaConfigurationLoader.java
+END
+SearchCriteria.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/digitnexus/!svn/ver/10514/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/search/SearchCriteria.java
+END
+FilterExpressionDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/digitnexus/!svn/ver/8132/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/search/FilterExpressionDescription.java
+END
+SortExpressionDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/digitnexus/!svn/ver/7554/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/search/SortExpressionDescription.java
+END

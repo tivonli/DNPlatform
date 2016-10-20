@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test page 01</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+    <script type="text/javascript" src="../js/digitnexus-utils.js"></script>
+    <script type="text/javascript" src="../js/mashupeditor.js"></script>
+    <script type="text/javascript" src="test-content.js"></script>
+    
+    <script type="text/javascript">
+       
+   </script>
+ 
+   <script type="text/javascript">
+     
+      
+      function runTest(){
+       digitnexus.editor.me.parse(testOperatorJson);
+       var nodes =  digitnexus.editor.me.getConfigNodes();
+       console.log(nodes.size()); 
+     
+       console.log(digitnexus.utils.getStringWidth("H"));
+       console.log(digitnexus.utils.getStringWidth("HHHH"));
+      }
+      window.onload=runTest;
+   </script>
+   
+  
+</head>
+<body >
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="no"?>
+<binding xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="binding.xsd" direction="input">
+		
+	<mapping name="search-criteria-configuration" class="com.digitnexus.core.search.SearchCriteriaConfiguration" >		
+		<collection add-method="addSearchCriteria"
+					item-type="com.digitnexus.core.search.SearchCriteria"
+					iter-method="getSearchCriteriaIterator" />		
+	</mapping>
+	
+	
+
+	<mapping name="search-criteria"  class="com.digitnexus.core.search.SearchCriteria" ordered="false">
+		<value name="name" field="name"/>
+		<value name="entity-name" field="entityName"/>
+		<value name="is-default-criteria" field="defaultCriteria" usage="optional"/>
+		<value name="i18n-display-key" field="displayKey"/>	
+		<value name="is-visible" field="visible" usage="optional"/>
+		<collection add-method="addFilterExpression"
+					item-type="com.digitnexus.core.search.FilterExpressionDescription"
+					iter-method="getFilterExpressionsIterator" usage="optional"/>		
+		<collection add-method="addSortExpression"
+					item-type="com.digitnexus.core.search.SortExpressionDescription"
+					iter-method="getSortExpressionsIterator" usage="optional"/>						
+	</mapping>
+	
+	
+	<mapping name="filter-expression" class="com.digitnexus.core.search.FilterExpressionDescription">
+		<value name="field-name" field="name"/>
+		<!--Check com.digitnexus.core.web.ui.config.annotation.SearchOperator for operator values  -->
+		<value name="operator" field="operator" set-method="setOperator"/>
+		<value name="lower-value" field="lowerLimitValue"/>
+		<!--Specify this if operator is BETWEEN-->
+		<value name="upper-value" field="upperLimitValue" usage="optional"/>
+	</mapping>
+	
+	<mapping name="sort-expression" class="com.digitnexus.core.search.SortExpressionDescription">
+		<value name="field-name" field="name"/>
+		<value name="is-ascending" field="ascending"/>
+	</mapping>
+</binding>

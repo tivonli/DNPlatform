@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/digitnexus/!svn/ver/11940/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/acl/ast/transformer/mongodbQuery
+END
+AclTransformationUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/digitnexus/!svn/ver/11940/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/acl/ast/transformer/mongodbQuery/AclTransformationUtil.java
+END
+ASTNodeMongoQueryTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/digitnexus/!svn/ver/11940/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/acl/ast/transformer/mongodbQuery/ASTNodeMongoQueryTransformer.java
+END
+MongoQueryAclTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/digitnexus/!svn/ver/11940/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/acl/ast/transformer/mongodbQuery/MongoQueryAclTransformer.java
+END
+ASTNodeMongoQueryTransformers.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/digitnexus/!svn/ver/11940/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/acl/ast/transformer/mongodbQuery/ASTNodeMongoQueryTransformers.java
+END

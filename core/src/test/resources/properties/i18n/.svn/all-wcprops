@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/digitnexus/!svn/ver/10538/m200/trunk/DNPlatform/core/src/test/resources/properties/i18n
+END
+resourceBundleTest_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/digitnexus/!svn/ver/10538/m200/trunk/DNPlatform/core/src/test/resources/properties/i18n/resourceBundleTest_zh_CN.properties
+END
+resourceBundleTest_en.properties
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/digitnexus/!svn/ver/10538/m200/trunk/DNPlatform/core/src/test/resources/properties/i18n/resourceBundleTest_en.properties
+END

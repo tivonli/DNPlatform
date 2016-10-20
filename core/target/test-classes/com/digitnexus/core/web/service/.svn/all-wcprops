@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/digitnexus/!svn/ver/10696/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/web/service
+END
+EditViewServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/digitnexus/!svn/ver/10696/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/web/service/EditViewServiceTest.java
+END
+SearchViewServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/digitnexus/!svn/ver/10634/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/web/service/SearchViewServiceTest.java
+END
+ListViewServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/digitnexus/!svn/ver/10634/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/web/service/ListViewServiceTest.java
+END

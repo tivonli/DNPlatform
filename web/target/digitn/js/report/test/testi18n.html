@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>test new reporting engine</title>
+       
+        <script type="text/javascript" src="../../report/closure/goog/base.js"></script>
+        <script type="text/javascript" src="../../report/mashuputils.js"></script>
+        <script type="text/javascript" src="../../report/reportingengine.js"></script> 
+	<script type="text/javascript">
+	var context = digitnexus.re.context = "/SCMVisibility";
+        var println = function(msg) {
+             var console = document.getElementById('reportContainerId');
+             console.appendChild(document.createTextNode(msg));
+             console.appendChild(document.createElement('br'));
+        }
+	window.onload = function() {
+            var outDiv = document.getElementById('reportContainerId');
+            outDiv.style.left = ((document.documentElement.clientWidth - outDiv.offsetWidth)/2) + 'px';
+            //outDiv.style.top = ((document.documentElement.clientHeight - outDiv.offsetHeight)/2) + 'px';
+            var language = navigator.browserLanguage ? navigator.browserLanguage : navigator.language;
+            var i18n = digitnexus.utils.i18n
+            i18n.init(language,'/js/report/test');
+            println(i18n.get('test_i18n_value'));
+            println(i18n.get('cancel',null,'default value'));
+            println(i18n.get('test_i18n_params_one',['P0']));
+            println(i18n.get('test_i18n_params_two',['P0','P1']));
+            
+            document.write(isNaN("55"));
+        }
+	
+ </script>
+</head>
+
+<body>
+
+    <div id="reportContainerId" style="margin:100px ;padding: 10px;width:200px;height:200px;border: 1px solid #0077FF">
+         
+     </div>
+    <input type="file" capture="microphone"/>
+</body>
+</html>

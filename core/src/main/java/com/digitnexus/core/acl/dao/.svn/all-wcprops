@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/digitnexus/!svn/ver/11633/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/acl/dao
+END
+AccessControlDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/digitnexus/!svn/ver/11633/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/acl/dao/AccessControlDao.java
+END
+AccessControlDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/digitnexus/!svn/ver/11633/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/acl/dao/AccessControlDaoImpl.java
+END

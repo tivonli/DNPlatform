@@ -1,0 +1,114 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>报表说明</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <link rel="stylesheet" type="text/css" href="../style/help.css">
+    </head>
+    <body>
+    <center><h1>报表说明</h1></center>
+        <div class="mainContainer">
+             <div  > 
+            <h3>前提条件</h3>
+            <ul>
+                <li>请熟练撑握Mash-up Editor的基本操作;</li>
+                <li>若对操作有疑问，请重回重新看操作说明;</li>
+                <li>下面将只关注于功能实现，不会詊细说明操作；</li>
+            </ul>
+           </div>  
+            
+            <div  >
+                
+            <h3>Hello World 报表</h3>
+            <ul>
+                <li>假如当前系统数据库已存在以下表格;<br/><br/>
+                <image src="../images/testdata.jpg"/> 
+               </li>
+                <li>使用以下SQL语句查询两列表数据;
+                 select column1 as FirstLabel, value1 as ValueY from mashup_testtata;
+                </li>
+                <li>编辑器中已存在一个模版，名为DemoTemplate,如下图所示：<br/><br/>
+                <image src="../images/helloworlddemo.jpg"/> 
+                </li>
+            </ul>
+            
+            <h3>步骤</h3>
+            <ol>
+                <li>选择工具栏新建Mash-up按钮，弹出如下对话框：<br/><br/>
+                 <image src="../images/helloworld_create.jpg"/> 
+                </li>
+                 <li>输入名称和简单描述，如图;</li>
+                 <li>记着选择你想要使用的模版，否则新建出一个空Mash-up，如图模版列表高亮项;</li>
+                 <li>最后点击确定，你将看到新建的Mash-up长得和上图模板一模一样，没有任何区别；</li>
+                 <li>你的第一个报表现在就完成了，最后选择中终点结点，点选工具栏“运行Mashup定义，弹出如下对话框<br/><br/>
+                     <image src="../images/helloworldBar.jpg"/> 
+                 </li>
+                 <li>最后选对工具栏”保存“按钮保存到服务器;</li>
+                 <li>你打开相应项目并进入报表列页面，你将看你列broswer组报表列表中多了一项hellowork报表。</li>
+            </ol>
+           </div>  
+            
+             <div> 
+            <h3>把HelloWorld报表改为饼图</h3>
+            <ol>
+                <li>打开编辑器并打开helloworld报表;</li>
+                <li>双击终点结点，也就是代表柱图那个结点，弹出此结点属性对话框，如图<br/><br/>
+                <image src="../images/changetopiechart.jpg"/> 
+                </li>
+                <li>选择图中红圈圈着的选项，此时双弹出对说框提示，如图：<br/><br/>
+                  <image src="../images/changeChartTypeAlert.jpg"/> 
+                  <p><b>
+                        因为不同图的类型，有不同属性值或属性集合， 如果你修改了图的类型，之前图的属性参数自然就不能再用，此对话框是提示你是否真的要改变
+                        图的类型。一般来说，不需要改变图的类型，需是增加一个新的结点来实现新的图，下面将会说明怎么样增加新结点。现在这样做，只是为了说明
+                        此操作。
+                  </b></p>
+                </li>
+                 <li>最后选择中终点结点，点选工具栏“运行Mashup定义，弹出如下对话框<br/><br/>
+                  <image src="../images/chanagetopiechart.jpg"/> 
+                </li>
+            </ol>
+           </div>  
+            
+            
+            <div> 
+            <h3>在HelloWorld基础上新增一个图</h3>
+            <ol>
+                <li>打开编辑器并打开helloworld报表;</li>
+                <li>你将看到名为DrawOperator的结点右下角有一个蓝色圆形按钮，如下图所示<br/><br/>
+                  <image src="../images/navigatorButton.jpg"/> 
+                </li>
+                <li>用鼠标点击此蓝色按钮，新结点将会弹出来，并自动连接上DrawOperator,如下图:<br/><br/>
+                 <image src="../images/newChartNode.jpg"/> 
+                </li>
+                <li>双击此结点，弹出属性对话框，新建结点默认类型为barchart,我们选择piechart,最后确定;</li>
+                <li>同样，选中此结点，选择工具栏”运行“按钮，你将看到饼图;<br/>
+                   因为上面操作你已改了原来的图为饼图，所以现在两个都是饼图了，且因为他们的数据相同，所以显示的图形也一样；
+                </li>
+            </ol>
+           </div>  
+            
+            <div> 
+            <h3>不使用模板，新建一个全新Mashup</h3>
+            <ol>
+                <li>打开编辑器并打开helloworld报表;</li>
+                <li>你将看到名为DrawOperator的结点右下角有一个蓝色圆形按钮，如下图所示<br/><br/>
+                  <image src="../images/navigatorButton.jpg"/> 
+                </li>
+                <li>用鼠标点击此蓝色按钮，新结点将会弹出来，并自动连接上DrawOperator,如下图:<br/><br/>
+                 <image src="../images/newChartNode.jpg"/> 
+                </li>
+                <li>双击此结点，弹出属性对话框，新建结点默认类型为barchart,我们选择piechart,最后确定;</li>
+                <li>同样，选中此结点，选择工具栏”运行“按钮，你将看到饼图;<br/><br/>
+                   因为上面操作你已改了原来的图为饼图，所以现在两个都是饼图了，且因为他们的数据相同，所以显示的图形也一样；
+                </li>
+            </ol>
+           </div>  
+            
+        </div>
+         
+    </body>
+</html>

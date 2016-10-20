@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/digitnexus/!svn/ver/12158/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/util
+END
+HibernateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/util/HibernateUtil.java
+END
+DataFormatUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/digitnexus/!svn/ver/8603/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/util/DataFormatUtil.java
+END
+DecodeUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/digitnexus/!svn/ver/11797/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/util/DecodeUtil.java
+END
+DataTypeFormatUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/util/DataTypeFormatUtil.java
+END
+JaxbUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/digitnexus/!svn/ver/10514/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/util/JaxbUtil.java
+END
+ConfigUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/digitnexus/!svn/ver/8442/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/util/ConfigUtil.java
+END
+GzipUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/digitnexus/!svn/ver/11797/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/util/GzipUtil.java
+END
+SimpleNameValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/digitnexus/!svn/ver/12073/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/util/SimpleNameValue.java
+END
+HashMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/util/HashMapper.java
+END
+ClientIdUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/digitnexus/!svn/ver/6266/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/util/ClientIdUtil.java
+END
+TransformUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/digitnexus/!svn/ver/12158/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/util/TransformUtil.java
+END
+JibxUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/digitnexus/!svn/ver/10979/m200/trunk/DNPlatform/core/src/main/java/com/digitnexus/core/util/JibxUtils.java
+END

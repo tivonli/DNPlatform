@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <title>Insert title here</title>
+
+        <script type="text/javascript" src="../../report/closure/goog/base.js"></script>
+        <script type="text/javascript" src="../../report/mashuputils.js"></script>
+        <script type="text/javascript" src="../../report/reportingengine.js"></script> 
+        <script>
+            function seenScreen(){
+                var s = document.getElementById('screen');
+                document.write('requestFullScreen ' + document.documentElement.hasOwnProperty('requestFullScreen'));
+                document.write('<br/>')
+                document.write('mozRequestFullScreen ' + document.documentElement.hasOwnProperty('mozRequestFullScreen'));
+                document.write('<br/>')
+                document.write('webkitRequestFullScreen ' + document.documentElement.hasOwnProperty('webkitRequestFullScreen'));
+                document.write('<br/>')
+                document.write('<br/>')
+                   
+                document.write('requestFullScreen ' + document.documentElement.requestFullScreen);
+                document.write('<br/>')
+                document.write('mozRequestFullScreen ' + document.documentElement.mozRequestFullScreen);
+                document.write('<br/>')
+                document.write('webkitRequestFullScreen ' + document.documentElement.webkitRequestFullScreen);
+                document.write('<br/>')
+                  
+                document.write('navigator.getUserMedia ' + navigator.getUserMedia);
+                document.write('<br/>')
+                  
+                document.write('navigator.webkitGetUserMedia ' + navigator.webkitGetUserMedia);
+                document.write('<br/>')
+                
+                document.write('navigator.webkitGetUserMedia ' + navigator.mozGetUserMedia);
+                document.write('<br/>')
+                  
+                  
+                var battery = navigator.battery || navigator.webkitBattery || navigator.mozBattery;
+ 
+                // 一组非常有用的电池属性
+                console.warn("Battery charging: ", battery.charging); // true
+                console.warn("Battery level: ", battery.level); // 0.58
+                console.warn("Battery discharging time: ", battery.dischargingTime);
+ 
+                // 监听电池状态
+                battery.addEventListener("chargingchange", function(e) {
+                    console.warn("Battery charge change: ", battery.charging);
+                }, false);
+            }
+        </script>
+    </head>
+
+    <body onload="seenScreen()">
+        <script type="text/javascript">
+            document.write('openDatabase: ' + window.hasOwnProperty('openDatabase'));
+        </script>
+        <div id ="screen"></div>
+</html>

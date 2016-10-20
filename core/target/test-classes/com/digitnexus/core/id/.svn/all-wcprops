@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/digitnexus/!svn/ver/12448/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/id
+END
+SimpleIdGenerateUtilTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/digitnexus/!svn/ver/12158/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/id/SimpleIdGenerateUtilTest.java
+END
+IdGenerateUtilTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/digitnexus/!svn/ver/10524/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/id/IdGenerateUtilTest.java
+END
+UnitTestDomain.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/digitnexus/!svn/ver/10524/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/id/UnitTestDomain.java
+END
+PojoIdGeneratorHibernateTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/digitnexus/!svn/ver/10524/m200/trunk/DNPlatform/core/src/test/java/com/digitnexus/core/id/PojoIdGeneratorHibernateTest.java
+END

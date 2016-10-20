@@ -1,0 +1,22 @@
+
+body {
+	font-family:Arial Unicode MS,Arial,Helvetica;
+	font-size:10pt;
+}
+.mainContainer{
+    border: solid 2px gray;
+    text-align: left;
+    vertical-align: top;
+    margin: 10px;
+    padding: 10px;
+}
+.mainContainer image {
+     text-align: center;
+    vertical-align: middle;
+}
+.mainContainer div {
+    border: dotted 1px #99ccff;
+    margin: 10px;
+    padding-left:15px; 
+    background-color: #edf6ed
+}
